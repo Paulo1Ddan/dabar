@@ -1,0 +1,145 @@
+.contato{
+    min-height: 550px;
+    background: url("../../assets/contato/bannerContato.jpg") no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.contato .tituloContato{
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+}
+.contato .txtForm{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.contato .formContato{
+    display: flex;
+}
+.contato .formContato .inputs{
+    width: 50%;
+    padding: 1%;
+}
+.contato .formContato .inputs input{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid rgba(0,0,0, 0.6);
+    outline: none;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.contato .formContato .boxMensagem{
+    width: 50%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.contato .formContato .boxMensagem .formTextarea{
+    height: 100px;
+}
+.contato .formContato .boxMensagem textarea {
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0, 0.6);
+    outline: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    border-radius: 5px;
+    resize: none;
+}
+.contato .formContato .boxMensagem .formBtn{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contato .formContato .boxMensagem .formBtn button{
+    width: 400px;
+    height: 38px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 550;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contato .socialContato{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.contato .socialContato a{
+    color: #fff !important;
+}
+.contato .socialContato .contatoFacebook{
+    min-width: 240px;
+    height: 50px;
+    background: #1771e6;
+    margin: 0 50px;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contato .socialContato .contatoFacebook:hover{
+    background: #4c8ce0;
+}
+.contato .socialContato .contatoFacebook i{
+    margin-right: 20px;
+}
+.contato .socialContato .contatoWhatsapp{
+    width: 240px;
+    height: 50px;
+    background: #24d468;
+    margin: 0 50px;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contato .socialContato .contatoWhatsapp:hover{
+    background: #40c472;
+}
+.contato .socialContato .contatoWhatsapp i{
+    margin-right: 20px;
+}
+@media screen and (max-width:720px){
+    .contato .formContato{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contato .formContato .inputs{
+        width: 100%;
+    }
+    .contato .formContato .boxMensagem{
+        width: 100%;
+    }
+}
+@media screen and (max-width:590px){
+    .contato .socialContato .contatoFacebook{
+        margin: 10px;
+    }
+    .contato .socialContato .contatoWhatsapp{
+        margin: 10px;
+    }
+}

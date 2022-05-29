@@ -49,15 +49,15 @@ $dadosArtigo = $sqlArtigo->fetch(PDO::FETCH_ASSOC);
             </a>
         </div>
         <div class="iconMobile">
-            <button class="openMenu"><img src="../assets/icons/bars-solid.svg" alt=""></button>
+            <button class="openMenu"><img src="../../assets/icons/bars-solid.svg" alt=""></button>
         </div>
         <div class="menuMobile" bg-color="primary">
             <div class="iconCloseMobile">
-                <button class="closeMenu"><img src="../assets/icons/xmark-solid.svg" alt=""></button>
+                <button class="closeMenu"><img src="../../assets/icons/xmark-solid.svg" alt=""></button>
             </div>
             <div class="navMobile">
                 <ul>
-                    <li><a href="../">Início</a></li>
+                    <li><a href="../../">Início</a></li>
                     <li><a href="../../sobre/sobre.php">Sobre</a></li>
                     <li><a href="../../cursos/cursos.php">Cursos</a></li>
                     <li><a href="../blog.php">Blog</a></li>
@@ -72,8 +72,14 @@ $dadosArtigo = $sqlArtigo->fetch(PDO::FETCH_ASSOC);
             <img src="../../admin/<?php echo $dadosArtigo['imgBanner'] ?>" alt="">
         </div>
         <article class="artigo">
-            <h3><?php echo $dadosArtigo['tituloArtigo']?></h3>
-            <?php echo $dadosArtigo['artigo'] ?>
+            <h3><?php echo $dadosArtigo['tituloArtigo'] ?></h3>
+            <?php
+            $txtArtigo = explode("\r\n\r\n", $dadosArtigo['artigo']);
+            $qtdParagrafos = count($txtArtigo);
+            for ($i = 0; $i < $qtdParagrafos; $i++) {
+                echo $txtArtigo[$i] . "<br><br>";
+            }
+            ?>
         </article>
     </section>
 
@@ -100,7 +106,7 @@ $dadosArtigo = $sqlArtigo->fetch(PDO::FETCH_ASSOC);
         </div>
         <div class="padraoSite">
             <ul class="navRodape">
-                <li><a href="../">Início</a></li>
+                <li><a href="../../">Início</a></li>
                 <li><a href="../../sobre/sobre.php">Sobre</a></li>
                 <li><a href="../../cursos/cursos.php">Cursos</a></li>
                 <li><a href="../blog.php">Blog</a></li>

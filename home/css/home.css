@@ -135,6 +135,7 @@
     color: rgba(0, 0, 0, 0.7);
     font-size: 20px;
     border-radius: 5px;
+    resize: none;
 }
 .contato .formContato .boxMensagem .formBtn{
     margin-top: 50px;
@@ -158,6 +159,9 @@
     justify-content: center;
     margin-top: 50px;
     flex-wrap: wrap;
+}
+.contato .socialContato a{
+    color: #fff !important;
 }
 .contato .socialContato .contatoFacebook{
     min-width: 240px;

@@ -103,7 +103,7 @@ $sqlCursos->execute();
         <div class="padraoSite" data-aos="fade-down" data-aos-duration="2000">
             <h3 class="tituloContato">Contato</h3>
             <p class="txtForm">Entre em contato para dúvidas ou efetuar a matrícula</p>
-            <form action="" class="formContato">
+            <form action="" method="POST" class="formContato">
                 <div class="inputs">
                     <div class="formInput">
                         <input type="text" name="nome" required id="" placeholder="Nome">
@@ -112,7 +112,7 @@ $sqlCursos->execute();
                         <input type="email" name="email" required id="" placeholder="Email">
                     </div>
                     <div class="formInput">
-                        <input type="tel" name="Telefone" id="" placeholder="Telefone">
+                        <input type="tel" name="telefone" id="" placeholder="Telefone">
                     </div>
                 </div>
                 <div class="boxMensagem">
@@ -120,7 +120,7 @@ $sqlCursos->execute();
                         <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
                     </div>
                     <div class="formBtn">
-                        <button class="btnEnviar" btn-bg-color="secondary" type="submit">Enviar</button>
+                        <button class="btnEnviar" name="enviarContato" btn-bg-color="secondary" type="submit">Enviar</button>
                     </div>
                 </div>
             </form>
@@ -128,11 +128,13 @@ $sqlCursos->execute();
                 Ou
             </p>
             <div class="socialContato">
-                <div onclick="getLinkSocial('https:www.facebook.com/CETDABAR')" target='_blank' class="contatoFacebook">
-                    <i class="fa-brands fa-facebook-f"></i> Facebook
-                </div>
-                <div onclick="getLinkSocial('https:wa.me/5511930546947')" class="contatoWhatsapp">
-                    <i class="fa-brands fa-whatsapp"></i> Whatsapp
+                <div class="socialContato">
+                    <a href="https://www.facebook.com/CETDABAR" target="_blank" class="contatoFacebook">
+                        <i class="fa-brands fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5511930546947&text=Olá, gostaria de saber mais sobre a Dabar" target="_blank" class="contatoWhatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Whatsapp
+                    </a>
                 </div>
             </div>
         </div>
@@ -264,3 +266,37 @@ $sqlCursos->execute();
 </body>
 
 </html>
+<?php
+    if (isset($_POST['enviarContato'])) {
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $mensagem = $_POST['mensagem'];
+        $telefone = " ";
+        if(isset($_POST['telefone'])) $telefone = $_POST['telefone'];
+        spl_autoload_register(function ($class) {
+            require_once "global/php/$class.php";
+        });
+        require_once("lib/php-mailer/src/PHPMailer.php");
+        require_once("lib/php-mailer/src/SMTP.php");
+        require_once("lib/php-mailer/src/Exception.php");
+
+        $enviarEmail = new EnviarEmail();
+        $enviarEmail->setNome("$nome");
+        $enviarEmail->setEmail("$email");
+        $enviarEmail->setMensagem("$mensagem");
+        $enviarEmail->retornoDados();
+
+        $sqlInserirContato = $conexao->prepare("INSERT INTO contato (nomeContato, emailContato, telefoneContato, mensagemContato) VALUES(:nome, :email, :telefone, :mensagem)");
+        $sqlInserirContato->bindParam(":nome", $nome);
+        $sqlInserirContato->bindParam(":email", $email);
+        $sqlInserirContato->bindParam(":telefone", $telefone);
+        $sqlInserirContato->bindParam(":mensagem", $mensagem);
+
+        $sqlInserirContato->execute();
+        echo"
+            <script>    
+                location.href='index.php'
+            </script>
+        ";
+    }
+?>
