@@ -1,7 +1,10 @@
+<meta charset="UTF-8">
 <?php
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
-    use PHPMailer\PHPMailer\SMTP;
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
 class EnviarEmail
 {
 
@@ -52,38 +55,39 @@ class EnviarEmail
         $this->telefone = $telefone;
     }
 
-    public function retornoDados(){
+    public function retornoDados()
+    {
         $nome = $this->getNome();
         $email = $this->getEmail();
         $mensagem = $this->getMensagem();
         $mail = new PHPMailer();
         try {
-           $mail->isSMTP();
-           $mail->Host = "smtp.gmail.com";
-           $mail->SMTPAuth = true;
-           $mail->Username = "teste.paulo.daniel@gmail.com";
-           $mail->Password = "TesteMail442";
-           $mail->Port = 587;
+            $mail->isSMTP();
+            $mail->CharSet = 'UTF-8';
+            $mail->Host = "smtp.office365.com";
+            $mail->SMTPAuth = true;
+            $mail->Username = "teste.paulo.daniel@outlook.com";
+            $mail->Password = "TesteMail442";
+            $mail->Port = 587;
 
-           $mail->setFrom("teste.paulo.daniel@gmail.com");
-           $mail->addAddress("$email");
+            $mail->setFrom("teste.paulo.daniel@outlook.com");
+            $mail->addAddress("$email");
 
-           $mail->isHTML(true);
-           $mail->Subject = "Teste de Email";
-           $mail->Body = 
-           "
+            $mail->isHTML(true);
+            $mail->Subject = "Teste de Email";
+            $mail->Body =
+                "
                 Olá, <strong>$nome</strong>. Entraremos em contato em breve.
                 <br><br>
                 <p>$nome</p>
                 <p>$email</p>
                 <p>$mensagem</p>
            ";
-           $mail->AltBody = "Olá, $nome. Entraremos em contato em breve";
-           $mail->send();
+            $mail->AltBody = "Olá, $nome. Entraremos em contato em breve";
+            $mail->send();
         } catch (Exception $e) {
-           echo "Erro ao enviar email: ".$e->getMessage();
+            echo "Erro ao enviar email: " . $e->getMessage();
         }
     }
 }
-
 
