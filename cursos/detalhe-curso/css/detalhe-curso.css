@@ -26,6 +26,10 @@
 .containerCurso .txtCurso p{
     margin-top: 10px !important;
 }
+.containerCurso .txtCurso ul{
+    list-style: disc;
+    padding-left: 35px !important;
+}
 .containerCurso .txtCurso p span{
     font-weight: 600;
     color: #1C391D;

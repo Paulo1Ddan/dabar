@@ -168,7 +168,7 @@ $dadosSobre = $sqlSobre->fetch(PDO::FETCH_ASSOC);
         </div>
     </section>
     <!-- Depoimentos -->
-    <section class="depoimentos">
+<!--     <section class="depoimentos">
         <div class="padraoSite">
             <h3 class="tituloDepo">Depoimentos</h3>
             <div class="containerDepo">
@@ -198,7 +198,7 @@ $dadosSobre = $sqlSobre->fetch(PDO::FETCH_ASSOC);
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Rodape -->
     <div class="socialFooter">
         <a href="https://www.facebook.com/CETDABAR" target="_blank">

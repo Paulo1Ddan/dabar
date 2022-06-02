@@ -85,11 +85,22 @@ $dadosSobre = $sqlSobre->fetch(PDO::FETCH_ASSOC);
             </div>
             <div class="txtIdentidade">
                 <h3 class="tituloIdentidade">Identidade da Escola</h3>
-                <p><?php echo $dadosSobre['identidade']?></p>
+                <p><?php echo $dadosSobre['identidade'] ?></p>
             </div>
             <div class="txtRequisitos">
                 <h3 class="tituloRequisitos">Sistema de Funcionamento da Escola</h3>
-                <p><?php echo $dadosSobre['requisitos']?></p>
+                <p><?php echo $dadosSobre['requisitos'] ?></p>
+            </div>
+            <div class="sobreAutor">
+                <h3 class="tituloSobreAutor">Sobre o Autor</h3>
+                <div class="containerAutor">
+                    <div class="imgAutor">
+                        <img src="../assets/sobre/imgAutor.jpg" alt="">
+                    </div>
+                    <div class="txtAutor">
+                        <p><?php echo $dadosSobre['sobreInstrutor'] ?></p>
+                    </div>
+                </div>
             </div>
             <h3 class="tituloGaleria">Galeria</h3>
             <div class="galeria">
