@@ -46,11 +46,14 @@ $dadosSobre = $sqlSobre->fetch(PDO::FETCH_ASSOC);
             <a href="https://www.facebook.com/CETDABAR" target="_blank">
                 <div><i class="fa-brands fa-facebook-f"></i></div>
             </a>
-            <a href="">
+            <a href="https://api.whatsapp.com/send?phone=5511930546947&text=Olá, gostaria de saber mais sobre a Dabar" target="_blank">
                 <div><i class="fa-brands fa-whatsapp"></i></div>
             </a>
-            <a href="https://www.youtube.com/channel/UCXieQGFmE_MwiaA6T9qlyEQ">
+            <a href="https://www.youtube.com/channel/UCXieQGFmE_MwiaA6T9qlyEQ" target="_blank">
                 <div><i class="fa-brands fa-youtube"></i></div>
+            </a>
+            <a href="https://www.instagram.com/fabio.dabar/" target="_blank">
+                <div><i class="fa-brands fa-instagram"></i></div>
             </a>
         </div>
         <div class="iconMobile">
@@ -77,8 +80,16 @@ $dadosSobre = $sqlSobre->fetch(PDO::FETCH_ASSOC);
                 <img src="../assets/sobre/sobre.jpg" alt="">
             </div>
             <div class="txtSobre">
-                <h3 class="tituloSobre">Dabar - Centro Educacional de Teología</h3>
+                <h3 class="tituloSobre">CETDABAR - Centro Educacional de Teologia DABAR</h3>
                 <p><?php echo $dadosSobre['sobre'] ?></p>
+            </div>
+            <div class="txtIdentidade">
+                <h3 class="tituloIdentidade">Identidade da Escola</h3>
+                <p><?php echo $dadosSobre['identidade']?></p>
+            </div>
+            <div class="txtRequisitos">
+                <h3 class="tituloRequisitos">Sistema de Funcionamento da Escola</h3>
+                <p><?php echo $dadosSobre['requisitos']?></p>
             </div>
             <h3 class="tituloGaleria">Galeria</h3>
             <div class="galeria">
@@ -132,13 +143,13 @@ $dadosSobre = $sqlSobre->fetch(PDO::FETCH_ASSOC);
                 <div class="icon">
                     <i class="fa-solid fa-envelope"></i>
                 </div>
-                <p>email@email.com</p>
+                <p>cetdabar@gmail.com</p>
             </div>
             <div class="telefone">
                 <div class="icon">
                     <i class="fa-solid fa-phone"></i>
                 </div>
-                <p>(11) 99999-9999</p>
+                <p>11 2891-8736/99318-2269</p>
             </div>
             <div class="local">
                 <div class="icon">
@@ -151,11 +162,14 @@ $dadosSobre = $sqlSobre->fetch(PDO::FETCH_ASSOC);
             <a href="https://www.facebook.com/CETDABAR" target="_blank">
                 <div btn-bg-color="secondary"><i class="fa-brands fa-facebook-f"></i></div>
             </a>
-            <a href="">
+            <a href="https://api.whatsapp.com/send?phone=5511930546947&text=Olá, gostaria de saber mais sobre a Dabar" target="_blank">
                 <div btn-bg-color="secondary"><i class="fa-brands fa-whatsapp"></i></div>
             </a>
-            <a href="https://www.youtube.com/channel/UCXieQGFmE_MwiaA6T9qlyEQ">
+            <a href="https://www.youtube.com/channel/UCXieQGFmE_MwiaA6T9qlyEQ" target="_blank">
                 <div btn-bg-color="secondary"><i class="fa-brands fa-youtube"></i></div>
+            </a>
+            <a href="https://www.instagram.com/fabio.dabar/" target="_blank">
+                <div btn-bg-color="secondary"><i class="fa-brands fa-instagram"></i></i></div>
             </a>
         </div>
     </footer>

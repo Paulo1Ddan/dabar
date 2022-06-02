@@ -339,6 +339,14 @@ footer ul{
     }
 }
 
+@media screen and (max-width: 812px){
+    header .socialHeader a div{
+        margin: 0 5px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
 @media screen and(max-width: 800px){
     .socialFooter a div {
         font-size: 2rem;
@@ -455,6 +463,13 @@ footer ul{
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width:320px){
+    .socialBase a div {
+        width: 40px;
+        height: 40px;
         font-size: 1.4rem;
     }
 }

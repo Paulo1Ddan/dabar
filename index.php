@@ -4,6 +4,9 @@ $conexao = ConexaoBanco::conectarBD();
 $conexao->exec("SET NAMES utf8");
 $sqlCursos = $conexao->prepare("SELECT idCurso, curso, descCurso, imgCurso FROM curso WHERE statusCurso = 1 LIMIT 2");
 $sqlCursos->execute();
+$sqlSobre = $conexao->prepare("SELECT sobre FROM dabar");
+$sqlSobre->execute();
+$dadosSobre = $sqlSobre->fetch(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 
@@ -43,11 +46,14 @@ $sqlCursos->execute();
             <a href="https://www.facebook.com/CETDABAR" target="_blank">
                 <div><i class="fa-brands fa-facebook-f"></i></div>
             </a>
-            <a href="">
+            <a href="https://api.whatsapp.com/send?phone=5511930546947&text=Olá, gostaria de saber mais sobre a Dabar" target="_blank">
                 <div><i class="fa-brands fa-whatsapp"></i></div>
             </a>
-            <a href="https://www.youtube.com/channel/UCXieQGFmE_MwiaA6T9qlyEQ">
+            <a href="https://www.youtube.com/channel/UCXieQGFmE_MwiaA6T9qlyEQ" target="_blank">
                 <div><i class="fa-brands fa-youtube"></i></div>
+            </a>
+            <a href="https://www.instagram.com/fabio.dabar/" target="_blank">
+                <div><i class="fa-brands fa-instagram"></i></div>
             </a>
         </div>
         <div class="iconMobile">
@@ -135,6 +141,9 @@ $sqlCursos->execute();
                     <a href="https://api.whatsapp.com/send?phone=5511930546947&text=Olá, gostaria de saber mais sobre a Dabar" target="_blank" class="contatoWhatsapp">
                         <i class="fa-brands fa-whatsapp"></i> Whatsapp
                     </a>
+                    <a href="https://www.instagram.com/fabio.dabar/" target="_blank" class="contatoInstagram">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
                 </div>
             </div>
         </div>
@@ -148,8 +157,9 @@ $sqlCursos->execute();
                     <img src="assets/sobre/sobre.jpg" alt="">
                 </div>
                 <div class="txtSobre">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum modi dicta consectetur tempora ea maxime porro esse rem non recusandae autem vel facere eveniet, reprehenderit eos in sed corrupti omnis.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum modi dicta consectetur tempora ea maxime porro esse rem non recusandae autem vel facere eveniet, reprehenderit eos in sed corrupti omnis.
+                    <?php 
+                        echo mb_strimwidth($dadosSobre['sobre'], 0, 500 , "...");
+                    ?>
                 </div>
                 <div class="btnSobre">
                     <button onclick="getLink(this, 'sobre/sobre.php')" btn-bg-color="secondary">Veja mais</button>
@@ -225,13 +235,13 @@ $sqlCursos->execute();
                 <div class="icon">
                     <i class="fa-solid fa-envelope"></i>
                 </div>
-                <p>email@email.com</p>
+                <p>cetdabar@gmail.com</p>
             </div>
             <div class="telefone">
                 <div class="icon">
                     <i class="fa-solid fa-phone"></i>
                 </div>
-                <p>(11) 99999-9999</p>
+                <p>11 2891-8736/99318-2269</p>
             </div>
             <div class="local">
                 <div class="icon">
@@ -244,11 +254,14 @@ $sqlCursos->execute();
             <a href="https://www.facebook.com/CETDABAR" target="_blank">
                 <div btn-bg-color="secondary"><i class="fa-brands fa-facebook-f"></i></div>
             </a>
-            <a href="">
+            <a href="https://api.whatsapp.com/send?phone=5511930546947&text=Olá, gostaria de saber mais sobre a Dabar" target="_blank">
                 <div btn-bg-color="secondary"><i class="fa-brands fa-whatsapp"></i></div>
             </a>
-            <a href="https://www.youtube.com/channel/UCXieQGFmE_MwiaA6T9qlyEQ">
+            <a href="https://www.youtube.com/channel/UCXieQGFmE_MwiaA6T9qlyEQ" target="_blank">
                 <div btn-bg-color="secondary"><i class="fa-brands fa-youtube"></i></div>
+            </a>
+            <a href="https://www.instagram.com/fabio.dabar/" target="_blank">
+                <div btn-bg-color="secondary"><i class="fa-brands fa-instagram"></i></i></div>
             </a>
         </div>
     </footer>

@@ -157,7 +157,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
     flex-wrap: wrap;
 }
 .contato .socialContato a{
@@ -201,6 +201,26 @@
     background: #40c472;
 }
 .contato .socialContato .contatoWhatsapp i{
+    margin-right: 20px;
+}
+.contato .socialContato .contatoInstagram{
+    width: 240px;
+    height: 50px;
+    background: #CF2872;
+    margin: 0 50px;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contato .socialContato .contatoInstagram:hover{
+    background: #c3427c;
+}
+.contato .socialContato .contatoInstagram i{
     margin-right: 20px;
 }
 
@@ -358,6 +378,9 @@
         margin: 10px;
     }
     .contato .socialContato .contatoWhatsapp{
+        margin: 10px;
+    }
+    .contato .socialContato .contatoInstagram{
         margin: 10px;
     }
 }

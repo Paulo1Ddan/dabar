@@ -30,6 +30,34 @@
     color: #1C391D;
     align-self: center;
 }
+.containerSobre .txtIdentidade{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+.containerSobre .txtIdentidade h3{
+    color: #1C391D;
+    align-self: center;
+}
+.containerSobre .txtIdentidade ol{
+    list-style:decimal;
+}
+
+.containerSobre .txtRequisitos{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+.containerSobre .txtRequisitos h3{
+    color: #1C391D;
+    align-self: center;
+}
+.containerSobre .txtRequisitos ol{
+    list-style: decimal;
+}
+
 .containerSobre .tituloGaleria{
     margin-top: 40px;
 }
