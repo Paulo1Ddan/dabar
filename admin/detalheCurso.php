@@ -1,14 +1,13 @@
 <?php 
-    require_once ("conexao.php");
-    $conexao = Conexao::conexaoBD();
-    $conexao->exec("SET NAMES utf8");
-    $idCurso = $_GET['idCurso'];
+    require_once ("config.php");
 
-    $sqlDetalhe = $conexao->prepare("SELECT * FROM curso WHERE idCurso="."$idCurso");
-    $sqlDetalhe->execute();
-
-    $json = array();
-    array_push($json, $sqlDetalhe->fetch(PDO::FETCH_ASSOC));
-
-    echo json_encode($json, JSON_UNESCAPED_UNICODE);
+    if(isset($_GET['idCurso'])){
+        try {
+            $detalheCurso = new DetalheCurso();
+            $detalheCurso->setIdCurso($_GET['idCurso']);
+            $detalheCurso->detalheCurso($detalheCurso->getIdCurso());
+        } catch (\Throwable $th) {
+            echo "Erro ao comunicar-se com a classe DetalheCurso".$th->getMessage();
+        }
+    }
 ?>
