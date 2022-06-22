@@ -66,11 +66,11 @@ class EnviarEmail
             $mail->CharSet = 'UTF-8';
             $mail->Host = "smtp.office365.com";
             $mail->SMTPAuth = true;
-            $mail->Username = "teste.paulo.daniel@outlook.com";
-            $mail->Password = "TesteMail442";
+            $mail->Username = "";
+            $mail->Password = "";
             $mail->Port = 587;
 
-            $mail->setFrom("teste.paulo.daniel@outlook.com");
+            $mail->setFrom("");
             $mail->addAddress("$email");
 
             $mail->isHTML(true);
