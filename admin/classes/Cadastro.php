@@ -39,6 +39,14 @@
         }
 
         public function cadastroUsuario($nome, $email, $senha, $telefone, $dataNasc){
+            list($anoNasc, $mesNasc, $diaNasc)= explode("-",$dataNasc);
+            $idade = 0;
+            $idade = date('Y') - $anoNasc;
+            if(date('m') < $mesNasc){
+                $idade -= 1;
+            }else if(date('m') == $mesNasc && date('d') < $diaNasc){
+                $idade -= 1;
+            }
             if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
                 $jsonCadastro = array(
                     "statusMsg" => false,
@@ -57,6 +65,52 @@
                     "msg" => "Insira um número válido"
                 );
                 echo json_encode($jsonCadastro);
+            }else if($idade < 14){
+                $jsonCadastro = array(
+                    "statusMsg" => false,
+                    "msg" => "A idade mínima para se integrar no curso é de 14 anos"
+                );
+                echo json_encode($jsonCadastro);
+            }else{
+                $conn = Conexao::conexaoBD();
+                $sqlCheckCadastro = $conn->prepare("SELECT * FROM usuario WHERE emailUsuario = :EMAIL");
+                $sqlCheckCadastro->bindParam(":EMAIL", $email);
+                $sqlCheckCadastro->execute();
+                $temCadastro = $sqlCheckCadastro->rowCount();
+                if($temCadastro > 0){
+                    $jsonCadastro = array(
+                        "statusMsg" => false,
+                        "msg" => "Conta já cadastrada"
+                    );
+                    echo json_encode($jsonCadastro);
+                }else{
+                    $senha = sha1($senha);
+                    $dataAtual = date("Y-m-d");
+                    $resultTel = sprintf("(%s) %s-%s",
+                    substr($telefone, 0, 2),
+                    substr($telefone, 2, 5),
+                    substr($telefone, 7, 4));
+
+                    $sqlInsertUsuario = $conn->prepare("INSERT INTO usuario(nomeUsuario, emailUsuario, telUsuario, senhaUsuario, dataNasc, imgUsuario, dataCad, statusUsuario, catUsuario) VALUES (:NOME, :EMAIL, :TEL, :SENHA, :DATANASC, 'default.png', '$dataAtual', '1', '1')");
+                    $sqlInsertUsuario->bindParam(":NOME", $nome);
+                    $sqlInsertUsuario->bindParam(":EMAIL", $email);
+                    $sqlInsertUsuario->bindParam(":TEL", $resultTel);
+                    $sqlInsertUsuario->bindParam(":SENHA", $senha);
+                    $sqlInsertUsuario->bindParam(":DATANASC", $dataNasc);
+                    if($sqlInsertUsuario->execute()){
+                        $jsonCadastro = array(
+                            "statusMsg" => true,
+                            "msg" => "Sua conta foi cadastrada com sucesso"
+                        );
+                        echo json_encode($jsonCadastro);
+                    }else{
+                        $jsonCadastro = array(
+                            "statusMsg" => false,
+                            "msg" => "Não foi possível cadastrar sua conta"
+                        );
+                        echo json_encode($jsonCadastro);
+                    }
+                }
             }
         }
     }
