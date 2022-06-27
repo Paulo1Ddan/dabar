@@ -4,7 +4,7 @@ require_once "conexao.php";
 $conexao = Conexao::conexaoBD();
 $conexao->exec("SET NAMES utf8");
 
-$idUsuario = 2;
+$idUsuario = $_GET['idUsuario'];
 
 $sqlUsuario = $conexao->prepare("SELECT * FROM usuario WHERE idUsuario = :id");
 $sqlUsuario->bindParam(":id", $idUsuario);

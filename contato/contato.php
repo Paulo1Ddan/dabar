@@ -71,7 +71,7 @@
             <form action="" method="POST" class="formContato">
                 <div class="inputs">
                     <div class="formInput">
-                        <input type="text" name="nome" required id="" placeholder="Nome">
+                        <input type="text" name="nome" value="Teste" required id="" placeholder="Nome">
                     </div>
                     <div class="formInput">
                         <input type="email" name="email" required id="" placeholder="Email">
