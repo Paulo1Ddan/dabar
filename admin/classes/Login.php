@@ -12,7 +12,7 @@
         }
 
         public function getSenha(){
-            return sha1($this->senha);
+            return $this->senha;
         }
 
         public function setSenha($senha){
@@ -22,6 +22,7 @@
         public function login($email, $senha){
             try{
                 $conn = Conexao::conexaoBD();
+                $senha = sha1($senha);
                 $queryLogin = $conn->prepare("SELECT * FROM usuario WHERE emailUsuario = :EMAIL AND senhaUsuario = :SENHA");
                 $queryLogin->bindParam(":EMAIL", $email);
                 $queryLogin->bindParam(":SENHA", $senha);
