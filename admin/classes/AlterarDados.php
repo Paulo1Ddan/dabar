@@ -10,11 +10,13 @@ class AlterarDados
     private $newPass;
     private $img;
 
-    public function getIdUsuario(){
+    public function getIdUsuario()
+    {
         return $this->idUsuario;
     }
 
-    public function setIdUsuario($idUsuario){
+    public function setIdUsuario($idUsuario)
+    {
         $this->idUsuario = $idUsuario;
     }
     public function getNome()
@@ -50,17 +52,27 @@ class AlterarDados
     {
         $this->dataNasc = $dataNasc;
     }
-    public function setOldPass($oldPass){
+    public function setOldPass($oldPass)
+    {
         $this->oldPass = $oldPass;
     }
-    public function getOldPass(){
+    public function getOldPass()
+    {
         return $this->oldPass;
     }
-    public function setNewPass($newPass){
+    public function setNewPass($newPass)
+    {
         $this->newPass = $newPass;
     }
-    public function getNewPass(){
+    public function getNewPass()
+    {
         return $this->newPass;
+    }
+    public function setImg($img){
+        $this->img = $img;
+    }
+    public function getImg(){
+        return $this->img;
     }
 
     public function alterarDados($nome, $email, $telefone, $dataNasc, $idUsuario)
@@ -116,7 +128,8 @@ class AlterarDados
         }
     }
 
-    public function alterarSenha($idUser, $oldPass, $newPass){
+    public function alterarSenha($idUser, $oldPass, $newPass)
+    {
         $conn = Conexao::conexaoBD();
         $oldPass = sha1($oldPass);
         $samePass = $conn->prepare("SELECT senhaUsuario FROM usuario WHERE idUsuario = :ID AND senhaUsuario = :PASS");
@@ -125,46 +138,43 @@ class AlterarDados
         $samePass->execute();
 
         $rowPass = $samePass->rowCount();
-        if($rowPass == 1){
-            if(!preg_match('/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d].\S{8,36}$/', $newPass)){
+        if ($rowPass == 1) {
+            if (!preg_match('/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d].\S{8,36}$/', $newPass)) {
                 $jsonCadastro = array(
                     "statusMsg" => false,
                     "msg" => "Insira uma nova senha válida"
                 );
                 echo json_encode($jsonCadastro);
-            }else{
+            } else {
                 $newPass = sha1($newPass);
                 $updateNewPass = $conn->prepare("UPDATE usuario SET senhaUsuario = :NEWPASS WHERE idUsuario = :ID");
                 $updateNewPass->bindParam(":ID", $idUser);
                 $updateNewPass->bindParam(":NEWPASS", $newPass);
-                
-                if($updateNewPass->execute()){
+
+                if ($updateNewPass->execute()) {
                     $jsonCadastro = array(
                         "statusMsg" => true,
                         "msg" => "Senha atualizada com sucesso"
                     );
                     echo json_encode($jsonCadastro);
-                }else{
+                } else {
                     $jsonCadastro = array(
                         "statusMsg" => false,
                         "msg" => "Não foi possivel atualizar sua senha"
                     );
                     echo json_encode($jsonCadastro);
                 }
-
-
             }
-        }else{
+        } else {
             $jsonCadastro = array(
                 "statusMsg" => false,
                 "msg" => "Senha atual incorreta"
             );
             echo json_encode($jsonCadastro);
         }
-        
     }
-
-    public function alterarImg(){
-
+    public function alterarImg($idUser, $img)
+    {
+        
     }
 }
