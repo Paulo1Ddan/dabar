@@ -59,7 +59,7 @@
                     "msg" => "Insira uma senha válida"
                 );
                 echo json_encode($jsonCadastro);
-            }else if(!is_numeric($telefone)||strlen($telefone) > 12 || strlen($telefone) <11 ){
+            } else if (!str_contains($telefone, "(") && !str_contains($telefone, ")") && !str_contains($telefone, '-') && strlen($telefone) > 15 || strlen($telefone) < 14) {
                 $jsonCadastro = array(
                     "statusMsg" => false,
                     "msg" => "Insira um número válido"
@@ -86,15 +86,11 @@
                 }else{
                     $senha = sha1($senha);
                     $dataAtual = date("Y-m-d");
-                    $resultTel = sprintf("(%s) %s-%s",
-                    substr($telefone, 0, 2),
-                    substr($telefone, 2, 5),
-                    substr($telefone, 7, 4));
 
-                    $sqlInsertUsuario = $conn->prepare("INSERT INTO usuario(nomeUsuario, emailUsuario, telUsuario, senhaUsuario, dataNasc, imgUsuario, dataCad, statusUsuario, catUsuario) VALUES (:NOME, :EMAIL, :TEL, :SENHA, :DATANASC, 'default.png', '$dataAtual', '1', '1')");
+                    $sqlInsertUsuario = $conn->prepare("INSERT INTO usuario(nomeUsuario, emailUsuario, telUsuario, senhaUsuario, dataNasc, imgUsuario, dataCad, statusUsuario, catUsuario) VALUES (:NOME, :EMAIL, :TEL, :SENHA, :DATANASC, 'default.svg', '$dataAtual', '1', '1')");
                     $sqlInsertUsuario->bindParam(":NOME", $nome);
                     $sqlInsertUsuario->bindParam(":EMAIL", $email);
-                    $sqlInsertUsuario->bindParam(":TEL", $resultTel);
+                    $sqlInsertUsuario->bindParam(":TEL", $telefone);
                     $sqlInsertUsuario->bindParam(":SENHA", $senha);
                     $sqlInsertUsuario->bindParam(":DATANASC", $dataNasc);
                     if($sqlInsertUsuario->execute()){
