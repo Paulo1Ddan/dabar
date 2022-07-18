@@ -70,26 +70,7 @@
         </div>
     </header>
 
-    <section class="containerCurso padraoSite">
-        <div class="imgCurso">
-            <img src="../../admin/<?php echo $dadoCurso['imgCurso']?>" alt="">
-        </div>
-        <div class="txtCurso">
-            <h3><?php echo $dadoCurso['curso']?></h3>
-            <p class="descCurso">
-                <?php echo $dadoCurso['descCurso']?>
-            </p>
-            <p class="instrutorCurso">
-                <span>Instrutor: </span><?php echo $dadoCurso['instrutorCurso']?>
-            </p>
-            <p class="duracaoCurso">
-                <span>Duração do curso:</span> <?php echo $dadoCurso['duracaoCurso']?>
-            </p>
-            <div class="matricula">
-                <p class="txtMatricula">Para se matricular, entre em contato pelo <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5511930546947&text=<?php echo$dadoCurso['mensagemCurso']?>" target="_blank">Whatsapp</a> ou <a class="facebook" href="https://www.facebook.com/CETDABAR" target="_blank">Facebook</a></p>
-            </div>
-        </div>
-    </section>
+
 
     <div class="socialFooter">
         <a href="https://www.facebook.com/CETDABAR" target="_blank">

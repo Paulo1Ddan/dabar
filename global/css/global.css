@@ -466,6 +466,7 @@ footer ul{
         font-size: 1.4rem;
     }
 }
+
 @media screen and (max-width:320px){
     .socialBase a div {
         width: 40px;
