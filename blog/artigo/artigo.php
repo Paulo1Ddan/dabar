@@ -1,5 +1,6 @@
 <?php
-require_once("../../global/php/conexao-pdo.php");
+require_once("../../config.php");
+use DB\ConexaoBanco;
 $conexao = ConexaoBanco::conectarBD();
 $conexao->exec("SET NAMES utf8");
 

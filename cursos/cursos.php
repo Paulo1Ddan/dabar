@@ -1,5 +1,6 @@
 <?php
-require_once("../global/php/conexao-pdo.php");
+require_once("../config.php");
+use DB\ConexaoBanco;
 $conexao = ConexaoBanco::conectarBD();
 $conexao->exec("SET NAMES utf8");
 $sqlCursos = $conexao->prepare("SELECT idCurso, curso, descCurso, imgCurso FROM curso WHERE statusCurso = 1 LIMIT 2");
@@ -89,23 +90,7 @@ $sqlCursos->execute();
         </div>
     </div>
 
-    <div class="socialFooter">
-        <a href="https://www.facebook.com/CETDABAR" target="_blank">
-            <div class="socialFacebook">
-                <i class="fa-brands fa-facebook-f"></i> <span>Facebook</span>
-            </div>
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=5511930546947&text=Olá, gostaria de saber mais sobre a Dabar" target="_blank">
-            <div class="socialWhatsapp">
-                <i class="fa-brands fa-whatsapp"></i><span>Whatsapp</span>
-            </div>
-        </a>
-        <a href="https://www.youtube.com/channel/UCXieQGFmE_MwiaA6T9qlyEQ" target="_blank">
-            <div class="socialYoutube">
-                <i class="fa-brands fa-youtube"></i><span>Youtube</span>
-            </div>
-        </a>
-    </div>
+    <!-- Rodape -->
     <footer bg-color="medium">
         <div class="logoRodape">
             <img src="../assets/logo/logo-dabar-verde.svg" alt="">

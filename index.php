@@ -1,8 +1,9 @@
 <?php
-require_once("global/php/conexao-pdo.php");
+require_once("config.php");
+use DB\ConexaoBanco;
 $conexao = ConexaoBanco::conectarBD();
 $conexao->exec("SET NAMES utf8");
-$sqlCursos = $conexao->prepare("SELECT idCurso, curso, descCurso, imgCurso FROM curso WHERE statusCurso = 1 LIMIT 2");
+$sqlCursos = $conexao->prepare("SELECT idCurso, curso, CONCAT(SUBSTR(descCurso, 1, 200), '...') AS descCurso, imgCurso FROM curso WHERE statusCurso = 1 LIMIT 2");
 $sqlCursos->execute();
 $sqlSobre = $conexao->prepare("SELECT sobre FROM dabar");
 $sqlSobre->execute();
@@ -95,7 +96,7 @@ $dadosSobre = $sqlSobre->fetch(PDO::FETCH_ASSOC);
                         <div class="descCurso">
                             <div class="txtCurso">
                                 <h3><?php echo $dadosCurso['curso'] ?></h3>
-                                <p><?php echo mb_strimwidth("$dadosCurso[descCurso]", 0, 250, "..."); ?></p>
+                                <p><?php echo "$dadosCurso[descCurso]" ?></p>
                             </div>
                             <button onclick="getLink(this, '#')" btn-bg-color="secondary" class="btnCurso">Conferir</button>
                         </div>
@@ -157,8 +158,8 @@ $dadosSobre = $sqlSobre->fetch(PDO::FETCH_ASSOC);
                     <img src="assets/sobre/sobre.jpg" alt="">
                 </div>
                 <div class="txtSobre">
-                    <?php 
-                        echo mb_strimwidth($dadosSobre['sobre'], 0, 500 , "...");
+                    <?php
+                    echo mb_strimwidth($dadosSobre['sobre'], 0, 500, "...");
                     ?>
                 </div>
                 <div class="btnSobre">
@@ -168,7 +169,7 @@ $dadosSobre = $sqlSobre->fetch(PDO::FETCH_ASSOC);
         </div>
     </section>
     <!-- Depoimentos -->
-<!--     <section class="depoimentos">
+    <!--     <section class="depoimentos">
         <div class="padraoSite">
             <h3 class="tituloDepo">Depoimentos</h3>
             <div class="containerDepo">
@@ -200,23 +201,6 @@ $dadosSobre = $sqlSobre->fetch(PDO::FETCH_ASSOC);
         </div>
     </section> -->
     <!-- Rodape -->
-    <div class="socialFooter">
-        <a href="https://www.facebook.com/CETDABAR" target="_blank">
-            <div class="socialFacebook">
-                <i class="fa-brands fa-facebook-f"></i> <span>Facebook</span>
-            </div>
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=5511930546947&text=Olá, gostaria de saber mais sobre a Dabar" target="_blank">
-            <div class="socialWhatsapp">
-                <i class="fa-brands fa-whatsapp"></i><span>Whatsapp</span>
-            </div>
-        </a>
-        <a href="https://www.youtube.com/channel/UCXieQGFmE_MwiaA6T9qlyEQ" target="_blank">
-            <div class="socialYoutube">
-                <i class="fa-brands fa-youtube"></i><span>Youtube</span>
-            </div>
-        </a>
-    </div>
     <footer bg-color="medium">
         <div class="logoRodape">
             <img src="assets/logo/logo-dabar-verde.svg" alt="">
@@ -266,7 +250,7 @@ $dadosSobre = $sqlSobre->fetch(PDO::FETCH_ASSOC);
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="lib/slick/slick.js"></script>
     <script src="lib/aos-master/dist/aos.js"></script>
@@ -280,36 +264,36 @@ $dadosSobre = $sqlSobre->fetch(PDO::FETCH_ASSOC);
 
 </html>
 <?php
-    if (isset($_POST['enviarContato'])) {
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $mensagem = $_POST['mensagem'];
-        $telefone = " ";
-        if(isset($_POST['telefone'])) $telefone = $_POST['telefone'];
-        spl_autoload_register(function ($class) {
-            require_once "global/php/$class.php";
-        });
-        require_once("lib/php-mailer/src/PHPMailer.php");
-        require_once("lib/php-mailer/src/SMTP.php");
-        require_once("lib/php-mailer/src/Exception.php");
+if (isset($_POST['enviarContato'])) {
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $mensagem = $_POST['mensagem'];
+    $telefone = " ";
+    if (isset($_POST['telefone'])) $telefone = $_POST['telefone'];
+    spl_autoload_register(function ($class) {
+        require_once "global/php/$class.php";
+    });
+    require_once("lib/php-mailer/src/PHPMailer.php");
+    require_once("lib/php-mailer/src/SMTP.php");
+    require_once("lib/php-mailer/src/Exception.php");
 
-        $enviarEmail = new EnviarEmail();
-        $enviarEmail->setNome("$nome");
-        $enviarEmail->setEmail("$email");
-        $enviarEmail->setMensagem("$mensagem");
-        $enviarEmail->retornoDados();
+    $enviarEmail = new EnviarEmail();
+    $enviarEmail->setNome("$nome");
+    $enviarEmail->setEmail("$email");
+    $enviarEmail->setMensagem("$mensagem");
+    $enviarEmail->retornoDados();
 
-        $sqlInserirContato = $conexao->prepare("INSERT INTO contato (nomeContato, emailContato, telefoneContato, mensagemContato) VALUES(:nome, :email, :telefone, :mensagem)");
-        $sqlInserirContato->bindParam(":nome", $nome);
-        $sqlInserirContato->bindParam(":email", $email);
-        $sqlInserirContato->bindParam(":telefone", $telefone);
-        $sqlInserirContato->bindParam(":mensagem", $mensagem);
+    $sqlInserirContato = $conexao->prepare("INSERT INTO contato (nomeContato, emailContato, telefoneContato, mensagemContato) VALUES(:nome, :email, :telefone, :mensagem)");
+    $sqlInserirContato->bindParam(":nome", $nome);
+    $sqlInserirContato->bindParam(":email", $email);
+    $sqlInserirContato->bindParam(":telefone", $telefone);
+    $sqlInserirContato->bindParam(":mensagem", $mensagem);
 
-        $sqlInserirContato->execute();
-        echo"
+    $sqlInserirContato->execute();
+    echo "
             <script>    
                 location.href='index.php'
             </script>
         ";
-    }
+}
 ?>

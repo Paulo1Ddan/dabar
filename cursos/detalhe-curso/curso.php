@@ -1,5 +1,6 @@
 <?php
-    require_once("../../global/php/conexao-pdo.php");
+    require_once("../../config.php");
+    use DB\ConexaoBanco;
     $conexao = ConexaoBanco::conectarBD();
     $conexao->exec("SET NAMES utf8");
     $sqlCurso = $conexao->prepare("SELECT * FROM curso WHERE idCurso=$_GET[idCurso]");
@@ -70,25 +71,28 @@
         </div>
     </header>
 
+    <section class="containerCurso padraoSite">
+        <div class="imgCurso">
+            <img src="../../admin/<?php echo$dadoCurso['imgCurso']?>" alt="">
+        </div>
+        <div class="txtCurso">
+            <h3><?php echo$dadoCurso['curso']?></h3>
+            <p class="descCurso">
+                <?php echo$dadoCurso['descCurso']?>
+            </p>
+            <p class="instrutorCurso">
+                <span>Instrutor: </span><?php echo$dadoCurso['instrutorCurso']?>
+            </p>
+            <p class="duracaoCurso">
+                <span>Duração do curso:</span> <?php echo$dadoCurso['duracaoCurso']?>
+            </p>
+            <div class="matricula">
+                <p class="txtMatricula">Para se matricular, entre em contato pelo <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5511930546947&text=<?php echo $dadoCurso['mensagemCurso']?>" target="_blank">Whatsapp</a> ou <a class="facebook" href="https://www.facebook.com/CETDABAR" target="_blank">Facebook</a></p>
+            </div>
+        </div>
+    </section>
 
-
-    <div class="socialFooter">
-        <a href="https://www.facebook.com/CETDABAR" target="_blank">
-            <div class="socialFacebook">
-                <i class="fa-brands fa-facebook-f"></i> <span>Facebook</span>
-            </div>
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=5511930546947&text=Olá, gostaria de saber mais sobre a Dabar" target="_blank">
-            <div class="socialWhatsapp">
-                <i class="fa-brands fa-whatsapp"></i><span>Whatsapp</span>
-            </div>
-        </a>
-        <a href="https://www.youtube.com/channel/UCXieQGFmE_MwiaA6T9qlyEQ" target="_blank">
-            <div class="socialYoutube">
-                <i class="fa-brands fa-youtube"></i><span>Youtube</span>
-            </div>
-        </a>
-    </div>
+    <!-- Rodape -->
     <footer bg-color="medium">
         <div class="logoRodape">
             <img src="../../assets/logo/logo-dabar-verde.svg" alt="">

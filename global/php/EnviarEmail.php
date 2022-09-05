@@ -63,26 +63,26 @@ class EnviarEmail
         $mail = new PHPMailer();
         try {
             $mail->isSMTP();
+            
             $mail->CharSet = 'UTF-8';
-            $mail->Host = "smtp.office365.com";
+            $mail->Host = "smtp.gmail.com";
             $mail->SMTPAuth = true;
-            $mail->Username = "";
-            $mail->Password = "";
-            $mail->Port = 587;
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+            $mail->Username = "teste.paulo.daniel@gmail.com";
+            $mail->Password = "ffluxlhrgjgpojjq";
+            $mail->Port = 465;
 
-            $mail->setFrom("");
+            $mail->setFrom("teste.paulo.daniel@gmail.com");
             $mail->addAddress("$email");
 
             $mail->isHTML(true);
-            $mail->Subject = "Teste de Email";
+            $mail->Subject = "Obrigado por nos contatar";
             $mail->Body =
-                "
+            "
+                <header style='padding: 10px; border-bottom: 1px solid #ccc;'>Cetdabar</header>
                 Olá, <strong>$nome</strong>. Entraremos em contato em breve.
                 <br><br>
-                <p>$nome</p>
-                <p>$email</p>
-                <p>$mensagem</p>
-           ";
+            ";
             $mail->AltBody = "Olá, $nome. Entraremos em contato em breve";
             $mail->send();
         } catch (Exception $e) {

@@ -205,7 +205,7 @@
                 alert('Email Enviado');
             </script>
         ";
-
+        
         $conexao = ConexaoBanco::conectarBD();
         $conexao->exec("SET NAMES utf8");
 
