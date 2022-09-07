@@ -68,8 +68,8 @@ class EnviarEmail
             $mail->Host = "smtp.gmail.com";
             $mail->SMTPAuth = true;
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-            $mail->Username = "teste.paulo.daniel@gmail.com";
-            $mail->Password = "ffluxlhrgjgpojjq";
+            $mail->Username = "";
+            $mail->Password = "";
             $mail->Port = 465;
 
             $mail->setFrom("teste.paulo.daniel@gmail.com");
