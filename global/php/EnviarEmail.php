@@ -80,7 +80,7 @@ class EnviarEmail
             $mail->Body =
             "
                 <header style='padding: 10px; border-bottom: 1px solid #ccc;'>Cetdabar</header>
-                Olá, <strong>$nome</strong>. Entraremos em contato em breve.
+                Olá, <strong>$nome</strong>. Entrremos em contato em breve.
                 <br><br>
             ";
             $mail->AltBody = "Olá, $nome. Entraremos em contato em breve";
