@@ -7,7 +7,7 @@
 
         $iduser = $_GET['iduser'];
 
-        $sqlMatricula = $conn->prepare("SELECT idMatricula, statusMatricula, idCurso, curso, imgCurso  FROM matricula INNER JOIN curso USING(idCurso) WHERE (idUsuario = :id) AND (statusMatricula = 1 OR statusMatricula = 2)");
+        $sqlMatricula = $conn->prepare("SELECT idMatriculado, statusMatriculado, idCurso, curso, imgCurso  FROM matriculado INNER JOIN curso USING(idCurso) WHERE (idUsuario = :id) AND (statusMatriculado = 1 OR statusMatriculado = 2)");
         $sqlMatricula->bindParam(":id", $iduser);
         $sqlMatricula->execute();
 

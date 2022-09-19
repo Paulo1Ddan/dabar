@@ -3,7 +3,7 @@ require_once("../config.php");
 use DB\ConexaoBanco;
 $conexao = ConexaoBanco::conectarBD();
 $conexao->exec("SET NAMES utf8");
-$sqlCursos = $conexao->prepare("SELECT idCurso, curso, descCurso, imgCurso FROM curso WHERE statusCurso = 1 LIMIT 2");
+$sqlCursos = $conexao->prepare("SELECT idCurso, curso, descCurso, imgCurso FROM curso WHERE statusCurso = 1");
 $sqlCursos->execute();
 ?>
 

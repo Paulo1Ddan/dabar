@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 18-Jul-2022 às 02:58
+-- Tempo de geração: 19-Set-2022 às 06:45
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -57,38 +57,8 @@ CREATE TABLE `artigo` (
 
 INSERT INTO `artigo` (`idArtigo`, `tituloArtigo`, `imgCapa`, `imgBanner`, `artigo`, `dataArtigo`) VALUES
 (1, 'Artigo 1', 'assets/blog/capa/c4ca4238a0b923820dcc509a6f75849b.jpg', 'assets/blog/banner/c81e728d9d4c2f636f067f89cc14862c.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida turpis eget finibus tristique. Aliquam et urna eget lectus dignissim efficitur ut eu mi. Proin rhoncus dictum tellus in placerat. In non nibh in libero faucibus pellentesque. Proin ultrices erat sed volutpat porttitor. Donec et metus vel tellus volutpat pretium. Pellentesque eu quam id lorem faucibus porttitor. Pellentesque iaculis velit non quam semper pretium. In laoreet imperdiet luctus. Mauris orci tortor, rutrum id aliquam in, ullamcorper aliquam erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas efficitur enim sem. Pellentesque tellus tellus, feugiat non elementum vel, semper quis ante. In quis vehicula orci, eu tincidunt sapien.\r\n\r\n\r\nPellentesque condimentum erat ac velit hendrerit, non dapibus augue viverra. Donec ut pulvinar est. In hac habitasse platea dictumst. Donec varius, mauris eget egestas luctus, libero enim volutpat enim, sed finibus lorem erat eget arcu. Nunc porttitor id diam in porttitor. In tempor imperdiet sapien sed dignissim. Curabitur odio purus, pellentesque nec tellus nec, porttitor consequat nibh. Sed laoreet egestas ornare. Etiam pretium dui elit, nec mollis nibh lacinia at. Aenean varius leo at ornare porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pharetra risus. Vestibulum velit augue, pharetra id laoreet ut, cursus sed tortor. Duis nec enim ex.\r\n\r\n\r\nDuis vitae mauris fermentum, egestas dolor id, porta nibh. Nullam tellus diam, dictum et tellus vel, semper facilisis eros. Duis ut augue mauris. Sed augue nisl, egestas eu maximus a, tempor a erat. Ut id tincidunt eros. Proin tempor augue eget diam hendrerit viverra. Aliquam vel sem vel urna finibus bibendum id nec eros. Etiam in mattis turpis, a facilisis dui. Sed dapibus augue vitae scelerisque fringilla. Quisque fermentum leo et ipsum tempor facilisis. Maecenas at viverra eros. Praesent dapibus velit vel ultricies efficitur. Ut eget tellus nulla.\r\n\r\n\r\nIn porttitor a eros sed tristique. Aenean id quam scelerisque, aliquam sapien vel, interdum mi. Vivamus turpis dui, aliquet eu quam sit amet, lobortis finibus risus. Pellentesque ultricies auctor purus in dignissim. Phasellus non efficitur eros, ac tincidunt purus. Donec laoreet dolor a ante fermentum finibus. Nulla lacus dui, porta a nibh ac, ultrices blandit magna. Maecenas hendrerit quam et felis euismod, sed mollis nisl commodo. Nunc eu gravida tellus. Sed euismod justo at fringilla ornare. Suspendisse bibendum nec ante ac egestas. Aenean tristique efficitur orci nec iaculis. Phasellus tincidunt, lorem ut elementum ultricies, est risus rhoncus leo, et mattis nunc neque dignissim metus. Etiam tincidunt, est sit amet imperdiet sagittis, leo velit pellentesque turpis, non pellentesque odio arcu sed tellus. Phasellus luctus, tortor vitae accumsan imperdiet, arcu tortor dictum leo, vitae sagittis sapien magna quis diam. Pellentesque lobortis eleifend diam.\r\n\r\n\r\nSed interdum nisl vitae ultricies fringilla. Etiam tincidunt sem est, sed gravida massa hendrerit nec. Praesent egestas nisi euismod, tempor sem sed, scelerisque tortor. In sit amet nunc lacinia, ultrices libero tristique, tincidunt leo. Nam volutpat, urna ut malesuada dapibus, sapien urna bibendum risus, in congue arcu odio quis nulla. Morbi nec finibus orci. Nulla erat orci, porta nec congue vel, egestas in lorem.', '2022-03-08 12:31:16'),
-(2, 'Artigo 2', 'assets/blog/capa/c4ca4238a0b923820dcc509a6f75849b.jpg', 'assets/blog/banner/c81e728d9d4c2f636f067f89cc14862c.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida turpis eget finibus tristique. Aliquam et urna eget lectus dignissim efficitur ut eu mi. Proin rhoncus dictum tellus in placerat. In non nibh in libero faucibus pellentesque. Proin ultrices erat sed volutpat porttitor. Donec et metus vel tellus volutpat pretium. Pellentesque eu quam id lorem faucibus porttitor. Pellentesque iaculis velit non quam semper pretium. In laoreet imperdiet luctus. Mauris orci tortor, rutrum id aliquam in, ullamcorper aliquam erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas efficitur enim sem. Pellentesque tellus tellus, feugiat non elementum vel, semper quis ante. In quis vehicula orci, eu tincidunt sapien.\r\n\r\n\r\nPellentesque condimentum erat ac velit hendrerit, non dapibus augue viverra. Donec ut pulvinar est. In hac habitasse platea dictumst. Donec varius, mauris eget egestas luctus, libero enim volutpat enim, sed finibus lorem erat eget arcu. Nunc porttitor id diam in porttitor. In tempor imperdiet sapien sed dignissim. Curabitur odio purus, pellentesque nec tellus nec, porttitor consequat nibh. Sed laoreet egestas ornare. Etiam pretium dui elit, nec mollis nibh lacinia at. Aenean varius leo at ornare porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pharetra risus. Vestibulum velit augue, pharetra id laoreet ut, cursus sed tortor. Duis nec enim ex.\r\n\r\n\r\nDuis vitae mauris fermentum, egestas dolor id, porta nibh. Nullam tellus diam, dictum et tellus vel, semper facilisis eros. Duis ut augue mauris. Sed augue nisl, egestas eu maximus a, tempor a erat. Ut id tincidunt eros. Proin tempor augue eget diam hendrerit viverra. Aliquam vel sem vel urna finibus bibendum id nec eros. Etiam in mattis turpis, a facilisis dui. Sed dapibus augue vitae scelerisque fringilla. Quisque fermentum leo et ipsum tempor facilisis. Maecenas at viverra eros. Praesent dapibus velit vel ultricies efficitur. Ut eget tellus nulla.\r\n\r\n\r\nIn porttitor a eros sed tristique. Aenean id quam scelerisque, aliquam sapien vel, interdum mi. Vivamus turpis dui, aliquet eu quam sit amet, lobortis finibus risus. Pellentesque ultricies auctor purus in dignissim. Phasellus non efficitur eros, ac tincidunt purus. Donec laoreet dolor a ante fermentum finibus. Nulla lacus dui, porta a nibh ac, ultrices blandit magna. Maecenas hendrerit quam et felis euismod, sed mollis nisl commodo. Nunc eu gravida tellus. Sed euismod justo at fringilla ornare. Suspendisse bibendum nec ante ac egestas. Aenean tristique efficitur orci nec iaculis. Phasellus tincidunt, lorem ut elementum ultricies, est risus rhoncus leo, et mattis nunc neque dignissim metus. Etiam tincidunt, est sit amet imperdiet sagittis, leo velit pellentesque turpis, non pellentesque odio arcu sed tellus. Phasellus luctus, tortor vitae accumsan imperdiet, arcu tortor dictum leo, vitae sagittis sapien magna quis diam. Pellentesque lobortis eleifend diam.\r\n\r\n\r\nSed interdum nisl vitae ultricies fringilla. Etiam tincidunt sem est, sed gravida massa hendrerit nec. Praesent egestas nisi euismod, tempor sem sed, scelerisque tortor. In sit amet nunc lacinia, ultrices libero tristique, tincidunt leo. Nam volutpat, urna ut malesuada dapibus, sapien urna bibendum risus, in congue arcu odio quis nulla. Morbi nec finibus orci. Nulla erat orci, porta nec congue vel, egestas in lorem.', '2022-04-13 12:31:16'),
+(2, 'Artigo 2', 'assets/blog/capa/c4ca4238a0b923820dcc509a6f75849b.jpg', 'assets/blog/banner/c81e728d9d4c2f636f067f89cc14862c.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida turpis eget finibus tristique. Aliquam et urna eget lectus dignissim efficitur ut eu mi. Proin rhoncus dictum tellus in placerat. In non nibh in libero faucibus pellentesque. Proin ultrices erat sed volutpat porttitor. Donec et metus vel tellus volutpat pretium. Pellentesque eu quam id lorem faucibus porttitor. Pellentesque iaculis velit non quam semper pretium. In laoreet imperdiet luctus. Mauris orci tortor, rutrum id aliquam in, ullamcorper aliquam erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas efficitur enim sem. Pellentesque tellus tellus, feugiat non elementum vel, semper quis ante. In quis vehicula orci, eu tincidunt sapien.\n\n\nPellentesque condimentum erat ac velit hendrerit, non dapibus augue viverra. Donec ut pulvinar est. In hac habitasse platea dictumst. Donec varius, mauris eget egestas luctus, libero enim volutpat enim, sed finibus lorem erat eget arcu. Nunc porttitor id diam in porttitor. In tempor imperdiet sapien sed dignissim. Curabitur odio purus, pellentesque nec tellus nec, porttitor consequat nibh. Sed laoreet egestas ornare. Etiam pretium dui elit, nec mollis nibh lacinia at. Aenean varius leo at ornare porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pharetra risus. Vestibulum velit augue, pharetra id laoreet ut, cursus sed tortor. Duis nec enim ex.\n\n\nDuis vitae mauris fermentum, egestas dolor id, porta nibh. Nullam tellus diam, dictum et tellus vel, semper facilisis eros. Duis ut augue mauris. Sed augue nisl, egestas eu maximus a, tempor a erat. Ut id tincidunt eros. Proin tempor augue eget diam hendrerit viverra. Aliquam vel sem vel urna finibus bibendum id nec eros. Etiam in mattis turpis, a facilisis dui. Sed dapibus augue vitae scelerisque fringilla. Quisque fermentum leo et ipsum tempor facilisis. Maecenas at viverra eros. Praesent dapibus velit vel ultricies efficitur. Ut eget tellus nulla.\n\n\nIn porttitor a eros sed tristique. Aenean id quam scelerisque, aliquam sapien vel, interdum mi. Vivamus turpis dui, aliquet eu quam sit amet, lobortis finibus risus. Pellentesque ultricies auctor purus in dignissim. Phasellus non efficitur eros, ac tincidunt purus. Donec laoreet dolor a ante fermentum finibus. Nulla lacus dui, porta a nibh ac, ultrices blandit magna. Maecenas hendrerit quam et felis euismod, sed mollis nisl commodo. Nunc eu gravida tellus. Sed euismod justo at fringilla ornare. Suspendisse bibendum nec ante ac egestas. Aenean tristique efficitur orci nec iaculis. Phasellus tincidunt, lorem ut elementum ultricies, est risus rhoncus leo, et mattis nunc neque dignissim metus. Etiam tincidunt, est sit amet imperdiet sagittis, leo velit pellentesque turpis, non pellentesque odio arcu sed tellus. Phasellus luctus, tortor vitae accumsan imperdiet, arcu tortor dictum leo, vitae sagittis sapien magna quis diam. Pellentesque lobortis eleifend diam.\n\n\nSed interdum nisl vitae ultricies fringilla. Etiam tincidunt sem est, sed gravida massa hendrerit nec. Praesent egestas nisi euismod, tempor sem sed, scelerisque tortor. In sit amet nunc lacinia, ultrices libero tristique, tincidunt leo. Nam volutpat, urna ut malesuada dapibus, sapien urna bibendum risus, in congue arcu odio quis nulla. Morbi nec finibus orci. Nulla erat orci, porta nec congue vel, egestas in lorem.', '2022-04-13 12:31:16'),
 (3, 'Artigo 3', 'assets/blog/capa/c4ca4238a0b923820dcc509a6f75849b.jpg', 'assets/blog/banner/c81e728d9d4c2f636f067f89cc14862c.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet maximus suscipit. Quisque id tortor fermentum, rhoncus odio sed, consequat arcu. Ut et fringilla enim. Vivamus volutpat dolor mi, quis volutpat nisi vulputate ac. Vestibulum porta porta nisl ac sodales. Pellentesque posuere a lacus quis ullamcorper. Donec tincidunt tortor ut tortor euismod, et ultrices nulla egestas. Aenean ac elit ligula. Praesent at odio ut metus lacinia maximus et eu ipsum. In ac ante et nisl vestibulum porttitor tempus ut lectus. Praesent libero metus, finibus id eros quis, posuere auctor neque. Suspendisse vel sem congue, gravida massa eu, sollicitudin risus. Curabitur molestie nibh ac mi finibus viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis id lorem nec eros hendrerit tempor. Praesent lectus magna, blandit sit amet iaculis quis, vehicula a orci.\r\n\r\n\r\nPellentesque facilisis tortor eget cursus tincidunt. Vivamus nisi eros, consequat a viverra at, sollicitudin sit amet lacus. Aliquam faucibus quam quis est mollis varius. Etiam luctus, lectus sed euismod volutpat, odio felis iaculis tellus, nec porta urna turpis ut urna. Ut et semper nisl. Pellentesque volutpat, nunc vel pharetra luctus, turpis libero porttitor tortor, non dapibus nisi massa id nisl. Duis congue ipsum sed erat ullamcorper, vitae efficitur massa fermentum. Fusce quis vehicula eros, sed lobortis purus. Nam iaculis, mi id ullamcorper eleifend, lorem purus venenatis ex, eget mollis ante arcu vitae nisl. Donec blandit, risus quis venenatis malesuada, risus purus iaculis mi, id finibus nulla leo id nulla. Pellentesque dapibus dignissim mi, vitae fringilla diam dapibus eget. Aenean ut vestibulum nisl. Duis efficitur pretium diam, vel mattis ligula porttitor at.\r\n\r\n\r\nDonec sed malesuada augue. In efficitur vel neque ut vestibulum. Praesent id neque ac neque ultrices consequat. In rhoncus rhoncus mauris sit amet ullamcorper. Etiam consequat suscipit magna, sit amet gravida ligula pulvinar et. Pellentesque eu odio ex. Phasellus posuere tellus sed ante fringilla, eget pretium justo iaculis. Aliquam sagittis odio tellus, vitae malesuada risus cursus sed.\r\n\r\n\r\nCras hendrerit vitae dui vitae suscipit. Cras interdum elementum efficitur. Nullam pharetra, leo ut porta imperdiet, ligula tortor mattis neque, vitae posuere odio neque et dui. In bibendum massa neque, porttitor accumsan nibh euismod in. Aenean volutpat est eleifend sodales semper. Nulla consequat, lorem non laoreet posuere, tortor purus feugiat dui, sit amet molestie neque nisi eu elit. Nam nibh erat, maximus at tristique eu, accumsan vitae leo. Etiam fringilla a diam eget sodales. Morbi et lobortis ligula. Donec posuere dolor magna, eu suscipit ex rutrum non. Sed pulvinar diam vel quam viverra aliquet. Nam a orci lorem.\r\n\r\n\r\nSuspendisse nec ipsum ac odio porttitor tristique. Sed consectetur nibh id tempus auctor. Duis justo nibh, viverra et sodales sollicitudin, aliquam quis ligula. Fusce non purus ac libero scelerisque egestas. Proin at orci in neque condimentum auctor id nec quam. Donec erat nunc, imperdiet at tincidunt ut, eleifend vitae enim. Integer a nunc quis eros mattis maximus. Sed sed elit ac est pellentesque finibus. Vivamus ac eleifend est. Morbi iaculis tellus metus, eu lacinia arcu tristique a. Vivamus tristique libero vel leo fermentum, vel vulputate felis dictum.', '2022-06-10 12:31:16');
-
--- --------------------------------------------------------
-
---
--- Estrutura stand-in para vista `artigoantigo`
--- (Veja abaixo para a view atual)
---
-CREATE TABLE `artigoantigo` (
-`COD. ARTIGO` int(11)
-,`TITULO` varchar(150)
-,`CAPA` varchar(100)
-,`BANNER` varchar(100)
-,`ARTIGO` text
-,`DT. ARTIGO` timestamp
-);
-
--- --------------------------------------------------------
-
---
--- Estrutura stand-in para vista `artigoatual`
--- (Veja abaixo para a view atual)
---
-CREATE TABLE `artigoatual` (
-`COD. ARTIGO` int(11)
-,`TITULO` varchar(150)
-,`CAPA` varchar(100)
-,`BANNER` varchar(100)
-,`ARTIGO` text
-,`DT. ARTIGO` timestamp
-);
 
 -- --------------------------------------------------------
 
@@ -127,36 +97,6 @@ INSERT INTO `contato` (`idContato`, `nomeContato`, `emailContato`, `telefoneCont
 -- --------------------------------------------------------
 
 --
--- Estrutura stand-in para vista `contatoantigo`
--- (Veja abaixo para a view atual)
---
-CREATE TABLE `contatoantigo` (
-`COD. CONTATO` int(11)
-,`NOME` varchar(100)
-,`EMAIL` varchar(100)
-,`TELEFONE` char(14)
-,`MENSAGEM` text
-,`DT. CONTATO` timestamp
-);
-
--- --------------------------------------------------------
-
---
--- Estrutura stand-in para vista `contatoatual`
--- (Veja abaixo para a view atual)
---
-CREATE TABLE `contatoatual` (
-`COD. CONTATO` int(11)
-,`NOME` varchar(100)
-,`email` varchar(100)
-,`TELEFONE` char(14)
-,`MENSAGEM` text
-,`DT. CONTATO` timestamp
-);
-
--- --------------------------------------------------------
-
---
 -- Estrutura da tabela `curso`
 --
 
@@ -169,17 +109,19 @@ CREATE TABLE `curso` (
   `duracaoCurso` varchar(50) NOT NULL,
   `instrutorCurso` varchar(100) NOT NULL,
   `mensagemCurso` text NOT NULL,
-  `statusCurso` int(11) NOT NULL
+  `statusCurso` int(11) NOT NULL,
+  `deletedCurso` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `curso`
 --
 
-INSERT INTO `curso` (`idCurso`, `curso`, `descCurso`, `valorCurso`, `imgCurso`, `duracaoCurso`, `instrutorCurso`, `mensagemCurso`, `statusCurso`) VALUES
-(1, 'Curso Básico de Teologia', '<p><span style=\"color: rgb(0, 0, 0);\">O Curso B&aacute;sico de teologia &eacute; composto por 20 mat&eacute;rias curriculares, sendo elas bases fundamentais para o desenvolvimento do aluno ao decorrer do curso e para o exerc&iacute;cio de sua voca&ccedil;&atilde;o.</span></p>\n<p><span style=\"color: rgb(0, 0, 0);\">O curso cont&eacute;m as seguintes mat&eacute;rias:</span></p>\n<ul>\n<li><span style=\"color: rgb(0, 0, 0);\">Escatologia I;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Heresiologia I;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Hermen&ecirc;utica;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Geografia b&iacute;blica I;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Hist&oacute;ria de Israel;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Historia dos avivamentos;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Elemento de m&uacute;sica na B&iacute;blia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Evangelismo e integra&ccedil;&atilde;o;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Eclesiologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Soteriologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Cristologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Bibliologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Angeologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Teologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Pneumatologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Antropologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Hamartiologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Missiologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Pentateuco;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Lideran&ccedil;a crist&atilde;</span></li>\n</ul>', '', 'assets/cursos/curso1.jpg', '2 anos', 'Fabio Santos', 'Olá, gostaria de saber mais sobre o Curso Básico de Teologia', 1),
-(2, 'Curso Médio de Teologia', '<p><span style=\"color: rgb(0, 0, 0);\">O Curso M&eacute;dio em Teologia tem como base as 20 mat&eacute;rias do Curso B&aacute;sico de Teologia, adicionando mais 10 mat&eacute;rias complementares, que somadas, s&atilde;o ao todo, 30 mat&eacute;rias.&nbsp;<strong>Se voc&ecirc; j&aacute; &eacute; aluno do <a href=\"curso.php?idCurso=1\" aria-invalid=\"true\">Curso B&aacute;sico de Teologia</a>, poder&aacute; continuar com o m&eacute;dio adicionando as 10 mat&eacute;rias complementares.</strong></span></p>\n<p><span style=\"color: rgb(0, 0, 0);\">O curso cont&eacute;m as seguintes mat&eacute;rias:&nbsp;</span></p>\n<ul>\n<li><span style=\"color: rgb(0, 0, 0);\">Escatologia I;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Heresiologia I;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Hermen&ecirc;utica;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Geografia b&iacute;blica I;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Hist&oacute;ria de Israel;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Historia dos avivamentos;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Elemento de m&uacute;sica na B&iacute;blia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Evangelismo e integra&ccedil;&atilde;o;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Eclesiologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Soteriologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Cristologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Bibliologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Angeologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Teologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Pneumatologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Antropologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Hamartiologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Missiologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Pentateuco;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Lideran&ccedil;a crist&atilde;;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Homil&eacute;tica;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Adm. eclesi&aacute;stica ;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Teologia pastoral;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Ed. Religiosa;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Geografia b&iacute;blica II;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Heresiologia II;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">&Eacute;tica crist&atilde;;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Historia eclesi&aacute;stica I;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Historia eclesi&aacute;stica II;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Escatologia II;</span></li>\n</ul>', '', 'assets/cursos/curso2.jpg', '3 anos', 'Fabio Santos', 'Olá, gostaria de saber mais sobre o Curso Médio de Teologia', 1),
-(3, 'Curso Avançado de Teologia', '<p><span style=\"color: rgb(0, 0, 0);\">O Curso M&eacute;dio em Teologia tem como base as 20 mat&eacute;rias do Curso B&aacute;sico de Teologia, adicionando mais 10 mat&eacute;rias complementares, que somadas, s&atilde;o ao todo, 30 mat&eacute;rias.&nbsp;<strong>Se voc&ecirc; j&aacute; &eacute; aluno do <a href=\"curso.php?idCurso=1\" aria-invalid=\"true\">Curso B&aacute;sico de Teologia</a>, poder&aacute; continuar com o m&eacute;dio adicionando as 10 mat&eacute;rias complementares.</strong></span></p>\r\n<p><span style=\"color: rgb(0, 0, 0);\">O curso cont&eacute;m as seguintes mat&eacute;rias:&nbsp;</span></p>\r\n<ul>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Escatologia I;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Heresiologia I;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Hermen&ecirc;utica;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Geografia b&iacute;blica I;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Hist&oacute;ria de Israel;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Historia dos avivamentos;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Elemento de m&uacute;sica na B&iacute;blia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Evangelismo e integra&ccedil;&atilde;o;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Eclesiologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Soteriologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Cristologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Bibliologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Angeologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Teologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Pneumatologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Antropologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Hamartiologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Missiologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Pentateuco;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Lideran&ccedil;a crist&atilde;;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Homil&eacute;tica;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Adm. eclesi&aacute;stica ;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Teologia pastoral;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Ed. Religiosa;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Geografia b&iacute;blica II;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Heresiologia II;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">&Eacute;tica crist&atilde;;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Historia eclesi&aacute;stica I;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Historia eclesi&aacute;stica II;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Escatologia II;</span></li>\r\n</ul>', '', 'assets/cursos/curso2.jpg', '4 anos', 'Fabio Santos', 'Olá, gostaria de saber mais sobre o Curso Médio de Teologia', 0);
+INSERT INTO `curso` (`idCurso`, `curso`, `descCurso`, `valorCurso`, `imgCurso`, `duracaoCurso`, `instrutorCurso`, `mensagemCurso`, `statusCurso`, `deletedCurso`) VALUES
+(1, 'Curso Básico de Teologia', '<p><span style=\"color: rgb(0, 0, 0);\">O Curso B&aacute;sico de teologia &eacute; composto por 20 mat&eacute;rias curriculares, sendo elas bases fundamentais para o desenvolvimento do aluno ao decorrer do curso e para o exerc&iacute;cio de sua voca&ccedil;&atilde;o.</span></p>\n<p><span style=\"color: rgb(0, 0, 0);\">O curso cont&eacute;m as seguintes mat&eacute;rias:</span></p>\n<ul>\n<li><span style=\"color: rgb(0, 0, 0);\">Escatologia I;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Heresiologia I;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Hermen&ecirc;utica;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Geografia b&iacute;blica I;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Hist&oacute;ria de Israel;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Historia dos avivamentos;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Elemento de m&uacute;sica na B&iacute;blia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Evangelismo e integra&ccedil;&atilde;o;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Eclesiologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Soteriologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Cristologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Bibliologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Angeologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Teologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Pneumatologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Antropologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Hamartiologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Missiologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Pentateuco;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Lideran&ccedil;a crist&atilde;</span></li>\n</ul>', '', 'assets/cursos/curso1.jpg', '2 anos', 'Fabio Santos', 'Olá, gostaria de saber mais sobre o Curso Básico de Teologia', 1, 0),
+(2, 'Curso Médio de Teologia', '<p><span style=\"color: rgb(0, 0, 0);\">O Curso M&eacute;dio em Teologia tem como base as 20 mat&eacute;rias do Curso B&aacute;sico de Teologia, adicionando mais 10 mat&eacute;rias complementares, que somadas, s&atilde;o ao todo, 30 mat&eacute;rias.&nbsp;<strong>Se voc&ecirc; j&aacute; &eacute; aluno do <a href=\"curso.php?idCurso=1\" aria-invalid=\"true\">Curso B&aacute;sico de Teologia</a>, poder&aacute; continuar com o m&eacute;dio adicionando as 10 mat&eacute;rias complementares.</strong></span></p>\n<p><span style=\"color: rgb(0, 0, 0);\">O curso cont&eacute;m as seguintes mat&eacute;rias:&nbsp;</span></p>\n<ul>\n<li><span style=\"color: rgb(0, 0, 0);\">Escatologia I;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Heresiologia I;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Hermen&ecirc;utica;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Geografia b&iacute;blica I;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Hist&oacute;ria de Israel;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Historia dos avivamentos;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Elemento de m&uacute;sica na B&iacute;blia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Evangelismo e integra&ccedil;&atilde;o;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Eclesiologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Soteriologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Cristologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Bibliologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Angeologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Teologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Pneumatologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Antropologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Hamartiologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Missiologia;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Pentateuco;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Lideran&ccedil;a crist&atilde;;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Homil&eacute;tica;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Adm. eclesi&aacute;stica ;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Teologia pastoral;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Ed. Religiosa;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Geografia b&iacute;blica II;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Heresiologia II;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">&Eacute;tica crist&atilde;;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Historia eclesi&aacute;stica I;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Historia eclesi&aacute;stica II;</span></li>\n<li><span style=\"color: rgb(0, 0, 0);\">Escatologia II;</span></li>\n</ul>', '', 'assets/cursos/curso2.jpg', '3 anos', 'Fabio Santos', 'Olá, gostaria de saber mais sobre o Curso Médio de Teologia', 1, 0),
+(3, 'Curso Avançado de Teologia', '<p><span style=\"color: rgb(0, 0, 0);\">O Curso M&eacute;dio em Teologia tem como base as 20 mat&eacute;rias do Curso B&aacute;sico de Teologia, adicionando mais 10 mat&eacute;rias complementares, que somadas, s&atilde;o ao todo, 30 mat&eacute;rias.&nbsp;<strong>Se voc&ecirc; j&aacute; &eacute; aluno do <a href=\"curso.php?idCurso=1\" aria-invalid=\"true\">Curso B&aacute;sico de Teologia</a>, poder&aacute; continuar com o m&eacute;dio adicionando as 10 mat&eacute;rias complementares.</strong></span></p>\r\n<p><span style=\"color: rgb(0, 0, 0);\">O curso cont&eacute;m as seguintes mat&eacute;rias:&nbsp;</span></p>\r\n<ul>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Escatologia I;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Heresiologia I;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Hermen&ecirc;utica;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Geografia b&iacute;blica I;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Hist&oacute;ria de Israel;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Historia dos avivamentos;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Elemento de m&uacute;sica na B&iacute;blia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Evangelismo e integra&ccedil;&atilde;o;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Eclesiologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Soteriologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Cristologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Bibliologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Angeologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Teologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Pneumatologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Antropologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Hamartiologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Missiologia;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Pentateuco;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Lideran&ccedil;a crist&atilde;;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Homil&eacute;tica;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Adm. eclesi&aacute;stica ;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Teologia pastoral;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Ed. Religiosa;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Geografia b&iacute;blica II;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Heresiologia II;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">&Eacute;tica crist&atilde;;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Historia eclesi&aacute;stica I;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Historia eclesi&aacute;stica II;</span></li>\r\n<li><span style=\"color: rgb(0, 0, 0);\">Escatologia II;</span></li>\r\n</ul>', '', 'assets/cursos/curso2.jpg', '4 anos', 'Fabio Santos', 'Olá, gostaria de saber mais sobre o Curso Médio de Teologia', 0, 1),
+(5, 'Curso de Cristologia', 'Quero me inscrever no Curso de Cristologia\r\n\r\nQuero me inscrever no Curso de Cristologia\r\n\r\nQuero me inscrever no Curso de Cristologia\r\n\r\nQuero me inscrever no Curso de Cristologia\r\n\r\nQuero me inscrever no Curso de Cristologia\r\n\r\nQuero me inscrever no Curso de Cristologia\r\n\r\nQuero me inscrever no Curso de Cristologia', '', 'assets/cursos/2022-09-19-00-41-25.jpg', '3 Meses', 'Fabio Santos', 'Quero me inscrever no Curso de Cristologia', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -208,13 +150,13 @@ CREATE TABLE `cursoativo` (
 CREATE TABLE `cursocompleto` (
 `COD. CURSO` int(11)
 ,`CURSO` varchar(50)
-,`DESC. CURSO` text
+,`DESC. CURSO` varchar(103)
 ,`VALOR` varchar(10)
 ,`IMG. CURSO` varchar(100)
 ,`DURAÇÃO` varchar(50)
 ,`INSTRUTOR` varchar(100)
 ,`MENSAGEM` text
-,`STATUS` int(11)
+,`STATUS` varchar(7)
 );
 
 -- --------------------------------------------------------
@@ -272,6 +214,26 @@ CREATE TABLE `depoimento` (
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `destaqueblog`
+--
+
+CREATE TABLE `destaqueblog` (
+  `idDestaque` int(11) NOT NULL,
+  `idArtigo` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `destaqueblog`
+--
+
+INSERT INTO `destaqueblog` (`idDestaque`, `idArtigo`) VALUES
+(1, 1),
+(2, 2),
+(3, 3);
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `materias`
 --
 
@@ -289,34 +251,19 @@ CREATE TABLE `materias` (
 
 CREATE TABLE `matricula` (
   `idMatricula` int(11) NOT NULL,
-  `dataMatricula` timestamp NOT NULL DEFAULT current_timestamp(),
-  `statusMatricula` int(11) NOT NULL,
-  `idUsuario` int(11) NOT NULL,
   `idCurso` int(11) NOT NULL,
-  `idTurma` int(11) NOT NULL
+  `idUsuario` int(11) NOT NULL,
+  `dataMatricula` timestamp NOT NULL DEFAULT current_timestamp(),
+  `statusMatricula` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `matricula`
 --
 
-INSERT INTO `matricula` (`idMatricula`, `dataMatricula`, `statusMatricula`, `idUsuario`, `idCurso`, `idTurma`) VALUES
-(1, '2022-06-10 12:18:51', 1, 2, 2, 4),
-(2, '2022-04-14 12:18:51', 0, 1, 1, 1);
-
--- --------------------------------------------------------
-
---
--- Estrutura stand-in para vista `matriculaantiga`
--- (Veja abaixo para a view atual)
---
-CREATE TABLE `matriculaantiga` (
-`NOME USUARIO` varchar(100)
-,`CURSO` varchar(50)
-,`TURMA` varchar(50)
-,`DT. MATRICULA` timestamp
-,`STATUS` int(11)
-);
+INSERT INTO `matricula` (`idMatricula`, `idCurso`, `idUsuario`, `dataMatricula`, `statusMatricula`) VALUES
+(1, 2, 2, '2022-06-10 12:18:51', 0),
+(18, 1, 22, '2022-09-18 18:16:38', 0);
 
 -- --------------------------------------------------------
 
@@ -325,25 +272,6 @@ CREATE TABLE `matriculaantiga` (
 -- (Veja abaixo para a view atual)
 --
 CREATE TABLE `matriculaativa` (
-`NOME USUARIO` varchar(100)
-,`CURSO` varchar(50)
-,`TURMA` varchar(50)
-,`DT. MATRICULA` timestamp
-,`STATUS` int(11)
-);
-
--- --------------------------------------------------------
-
---
--- Estrutura stand-in para vista `matriculaatual`
--- (Veja abaixo para a view atual)
---
-CREATE TABLE `matriculaatual` (
-`NOME USUARIO` varchar(100)
-,`CURSO` varchar(50)
-,`TURMA` varchar(50)
-,`DT. MATRICULA` timestamp
-,`STATUS` int(11)
 );
 
 -- --------------------------------------------------------
@@ -353,12 +281,31 @@ CREATE TABLE `matriculaatual` (
 -- (Veja abaixo para a view atual)
 --
 CREATE TABLE `matriculacompleta` (
-`NOME USUARIO` varchar(100)
-,`CURSO` varchar(50)
-,`TURMA` varchar(50)
-,`DT. MATRICULA` timestamp
-,`STATUS` int(11)
 );
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `matriculado`
+--
+
+CREATE TABLE `matriculado` (
+  `idMatriculado` int(11) NOT NULL,
+  `idCurso` int(11) NOT NULL,
+  `idTurma` int(11) NOT NULL,
+  `idUsuario` int(11) NOT NULL,
+  `idMatricula` int(11) NOT NULL,
+  `dataMatriculado` timestamp NOT NULL DEFAULT current_timestamp(),
+  `statusMatriculado` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `matriculado`
+--
+
+INSERT INTO `matriculado` (`idMatriculado`, `idCurso`, `idTurma`, `idUsuario`, `idMatricula`, `dataMatriculado`, `statusMatriculado`) VALUES
+(1, 2, 3, 2, 1, '2022-09-18 16:59:08', 1),
+(4, 1, 1, 22, 18, '2022-09-18 19:43:29', 1);
 
 -- --------------------------------------------------------
 
@@ -367,11 +314,6 @@ CREATE TABLE `matriculacompleta` (
 -- (Veja abaixo para a view atual)
 --
 CREATE TABLE `matriculainativa` (
-`NOME USUARIO` varchar(100)
-,`CURSO` varchar(50)
-,`TURMA` varchar(50)
-,`DT. MATRICULA` timestamp
-,`STATUS` int(11)
 );
 
 -- --------------------------------------------------------
@@ -383,19 +325,24 @@ CREATE TABLE `matriculainativa` (
 CREATE TABLE `turma` (
   `idTurma` int(11) NOT NULL,
   `nomeTurma` varchar(50) NOT NULL,
-  `statusTurma` int(11) NOT NULL,
-  `dataCadTurma` date NOT NULL
+  `statusTurma` varchar(11) NOT NULL,
+  `andamentoTurma` varchar(11) NOT NULL,
+  `dataCadTurma` date NOT NULL,
+  `deletedTurma` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `turma`
 --
 
-INSERT INTO `turma` (`idTurma`, `nomeTurma`, `statusTurma`, `dataCadTurma`) VALUES
-(1, 'TB 1', 0, '2022-03-01'),
-(2, 'TB 2', 1, '2022-06-10'),
-(3, 'TM 1', 0, '2021-07-13'),
-(4, 'TM 2', 1, '2022-06-10');
+INSERT INTO `turma` (`idTurma`, `nomeTurma`, `statusTurma`, `andamentoTurma`, `dataCadTurma`, `deletedTurma`) VALUES
+(1, 'TB 1', '0', '2', '2022-03-01', 0),
+(2, 'TB 2', '1', '1', '2022-06-10', 0),
+(3, 'TM 1', '1', '1', '2021-07-13', 0),
+(4, 'TM 2', '1', '1', '2022-06-10', 0),
+(7, 'TB 3', '0', '0', '2022-09-01', 0),
+(8, 'TM 3', '0', '0', '2022-09-01', 0),
+(9, 'C1', '1', '0', '2022-09-19', 0);
 
 -- --------------------------------------------------------
 
@@ -406,7 +353,8 @@ INSERT INTO `turma` (`idTurma`, `nomeTurma`, `statusTurma`, `dataCadTurma`) VALU
 CREATE TABLE `turmasativo` (
 `COD. TURMA` int(11)
 ,`TURMA` varchar(50)
-,`STATUS` int(11)
+,`STATUS` varchar(7)
+,`ANDAMENTO` varchar(10)
 ,`DT. CAD. TURMA` date
 );
 
@@ -419,7 +367,8 @@ CREATE TABLE `turmasativo` (
 CREATE TABLE `turmascompleto` (
 `COD. TURMA` int(11)
 ,`TURMA` varchar(50)
-,`STATUS` int(11)
+,`STATUS` varchar(7)
+,`ANDAMENTO` varchar(10)
 ,`DT. CAD. TURMA` date
 );
 
@@ -432,7 +381,8 @@ CREATE TABLE `turmascompleto` (
 CREATE TABLE `turmasinativo` (
 `COD. TURMA` int(11)
 ,`TURMA` varchar(50)
-,`STATUS` int(11)
+,`STATUS` varchar(7)
+,`ANDAMENTO` varchar(10)
 ,`DT. CAD. TURMA` date
 );
 
@@ -446,61 +396,26 @@ CREATE TABLE `usuario` (
   `idUsuario` int(11) NOT NULL,
   `nomeUsuario` varchar(100) NOT NULL,
   `emailUsuario` varchar(100) NOT NULL,
-  `telUsuario` char(14) NOT NULL,
+  `telUsuario` varchar(15) NOT NULL,
   `senhaUsuario` char(40) NOT NULL,
   `dataNasc` date NOT NULL,
   `imgUsuario` varchar(37) DEFAULT NULL,
   `dataCad` date DEFAULT NULL,
-  `statusUsuario` int(11) NOT NULL,
-  `catUsuario` int(11) NOT NULL,
-  `admin` int(11) NOT NULL
+  `statusUsuario` varchar(11) NOT NULL,
+  `catUsuario` varchar(11) NOT NULL,
+  `deletedUser` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `usuario`
 --
 
-INSERT INTO `usuario` (`idUsuario`, `nomeUsuario`, `emailUsuario`, `telUsuario`, `senhaUsuario`, `dataNasc`, `imgUsuario`, `dataCad`, `statusUsuario`, `catUsuario`, `admin`) VALUES
-(1, 'Paulo Daniel', 'pdaniel@gmail.com', '(11)99999-9999', '7c222fb2927d828af22f592134e8932480637c0d', '2002-05-10', '32e8c60726f0980ad65487fc05299d2f.jpg', '2022-05-10', 0, 1, 0),
-(2, 'Paulo Daniel Nascimento da Palma', 'paulodaniel1360@gmail.com', '(11)99999-9999', '7c222fb2927d828af22f592134e8932480637c0d', '2002-05-10', 'nezuko.jpg', '2022-05-19', 1, 2, 1),
-(6, 'Marcus Zuckenberg', 'mark.repetiliano@gmail.com', '(11) 99999-999', '1234', '1900-01-01', 'assets/zuck.png', '2022-06-10', 1, 1, 0),
-(7, 'Fabio Santos', 'cetdabar@gmail.com', '(11) 99999-999', '1234', '1980-06-01', 'assets/fabio.png', '2022-01-01', 1, 2, 1);
-
--- --------------------------------------------------------
-
---
--- Estrutura stand-in para vista `usuarioadm`
--- (Veja abaixo para a view atual)
---
-CREATE TABLE `usuarioadm` (
-`NOME` varchar(100)
-,`EMAIL` varchar(100)
-,`TELEFONE` char(14)
-,`SENHA` char(40)
-,`DT. NASC.` date
-,`IMG. USUARIO` varchar(37)
-,`DT. CAD.` date
-,`STATUS` int(11)
-,`CAT. USUARIO` int(11)
-);
-
--- --------------------------------------------------------
-
---
--- Estrutura stand-in para vista `usuarioaluno`
--- (Veja abaixo para a view atual)
---
-CREATE TABLE `usuarioaluno` (
-`NOME` varchar(100)
-,`EMAIL` varchar(100)
-,`TELEFONE` char(14)
-,`SENHA` char(40)
-,`DT. NASC.` date
-,`IMG. USUARIO` varchar(37)
-,`DT. CAD.` date
-,`STATUS` int(11)
-,`CAT. USUARIO` int(11)
-);
+INSERT INTO `usuario` (`idUsuario`, `nomeUsuario`, `emailUsuario`, `telUsuario`, `senhaUsuario`, `dataNasc`, `imgUsuario`, `dataCad`, `statusUsuario`, `catUsuario`, `deletedUser`) VALUES
+(1, 'Paulo Daniel', 'pdaniel@gmail.com', '(11) 99999-9999', 'dc2b76bf56e43fef073d67d331ca83211ef5bd16', '2002-05-10', 'default.svg', '2022-05-10', '0', '0', 0),
+(2, 'Paulo Daniel Nascimento da Palma', 'paulodaniel1360@gmail.com', '(11) 93054-6947', '2abd6623c714a17582a217f72a13ec78865d8d14', '2002-05-10', 'nezuko.jpg', '2022-05-19', '1', '2', 0),
+(22, 'Gigachada', 'gigachad@gmail.com', '(11) 11111-1111', '0e213626455ca46d0b7b373bd511db97fc32ecd2', '2002-05-11', '2022-09-19-00-12-43.jpg', '2022-09-15', '1', '0', 0),
+(23, 'Elza', 'elza@gmail.com', '(11) 11111-1111', '2abd6623c714a17582a217f72a13ec78865d8d14', '2002-05-29', 'default.svg', '2022-09-18', '1', '0', 0),
+(24, 'Penny', 'penny@gmail.com', '(11) 11111-1111', '2a2b8101552557f5baa41a5c4070cdd587858824', '2002-10-10', '2022-09-18-14-20-35.jpg', '2022-09-18', '1', '0', 1);
 
 -- --------------------------------------------------------
 
@@ -509,15 +424,15 @@ CREATE TABLE `usuarioaluno` (
 -- (Veja abaixo para a view atual)
 --
 CREATE TABLE `usuarioativo` (
-`nomeUsuario` varchar(100)
-,`emailUsuario` varchar(100)
-,`telUsuario` char(14)
-,`senhaUsuario` char(40)
-,`dataNasc` date
-,`imgUsuario` varchar(37)
-,`dataCad` date
-,`statusUsuario` int(11)
-,`catUsuario` int(11)
+`COD. USUARIO` int(11)
+,`NOME DO USUARIO` varchar(100)
+,`EMAIL DO USUARIO` varchar(100)
+,`TELEFONE DO USUARIO` varchar(15)
+,`DATA DE NASC.` date
+,`IMAGEM USUARIO` varchar(37)
+,`DATA DE CADASTRO` date
+,`STATUS` varchar(7)
+,`CATEGORIA` varchar(9)
 );
 
 -- --------------------------------------------------------
@@ -527,15 +442,15 @@ CREATE TABLE `usuarioativo` (
 -- (Veja abaixo para a view atual)
 --
 CREATE TABLE `usuariocompleto` (
-`nomeUsuario` varchar(100)
-,`emailUsuario` varchar(100)
-,`telUsuario` char(14)
-,`senhaUsuario` char(40)
-,`dataNasc` date
-,`imgUsuario` varchar(37)
-,`dataCad` date
-,`statusUsuario` int(11)
-,`catUsuario` int(11)
+`COD. USUARIO` int(11)
+,`NOME DO USUARIO` varchar(100)
+,`EMAIL DO USUARIO` varchar(100)
+,`TELEFONE DO USUARIO` varchar(15)
+,`DATA DE NASC.` date
+,`IMAGEM USUARIO` varchar(37)
+,`DATA DE CADASTRO` date
+,`STATUS` varchar(7)
+,`CATEGORIA` varchar(9)
 );
 
 -- --------------------------------------------------------
@@ -545,52 +460,16 @@ CREATE TABLE `usuariocompleto` (
 -- (Veja abaixo para a view atual)
 --
 CREATE TABLE `usuarioinativo` (
-`nomeUsuario` varchar(100)
-,`emailUsuario` varchar(100)
-,`telUsuario` char(14)
-,`senhaUsuario` char(40)
-,`dataNasc` date
-,`imgUsuario` varchar(37)
-,`dataCad` date
-,`statusUsuario` int(11)
-,`catUsuario` int(11)
+`COD. USUARIO` int(11)
+,`NOME DO USUARIO` varchar(100)
+,`EMAIL DO USUARIO` varchar(100)
+,`TELEFONE DO USUARIO` varchar(15)
+,`DATA DE NASC.` date
+,`IMAGEM USUARIO` varchar(37)
+,`DATA DE CADASTRO` date
+,`STATUS` varchar(7)
+,`CATEGORIA` varchar(9)
 );
-
--- --------------------------------------------------------
-
---
--- Estrutura para vista `artigoantigo`
---
-DROP TABLE IF EXISTS `artigoantigo`;
-
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `artigoantigo`  AS SELECT `artigo`.`idArtigo` AS `COD. ARTIGO`, `artigo`.`tituloArtigo` AS `TITULO`, `artigo`.`imgCapa` AS `CAPA`, `artigo`.`imgBanner` AS `BANNER`, `artigo`.`artigo` AS `ARTIGO`, `artigo`.`dataArtigo` AS `DT. ARTIGO` FROM `artigo` ORDER BY `artigo`.`dataArtigo` ASC  ;
-
--- --------------------------------------------------------
-
---
--- Estrutura para vista `artigoatual`
---
-DROP TABLE IF EXISTS `artigoatual`;
-
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `artigoatual`  AS SELECT `artigo`.`idArtigo` AS `COD. ARTIGO`, `artigo`.`tituloArtigo` AS `TITULO`, `artigo`.`imgCapa` AS `CAPA`, `artigo`.`imgBanner` AS `BANNER`, `artigo`.`artigo` AS `ARTIGO`, `artigo`.`dataArtigo` AS `DT. ARTIGO` FROM `artigo` ORDER BY `artigo`.`dataArtigo` AS `DESCdesc` ASC  ;
-
--- --------------------------------------------------------
-
---
--- Estrutura para vista `contatoantigo`
---
-DROP TABLE IF EXISTS `contatoantigo`;
-
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `contatoantigo`  AS SELECT `contato`.`idContato` AS `COD. CONTATO`, `contato`.`nomeContato` AS `NOME`, `contato`.`emailContato` AS `EMAIL`, `contato`.`telefoneContato` AS `TELEFONE`, `contato`.`mensagemContato` AS `MENSAGEM`, `contato`.`dataContato` AS `DT. CONTATO` FROM `contato` ORDER BY `contato`.`dataContato` ASC  ;
-
--- --------------------------------------------------------
-
---
--- Estrutura para vista `contatoatual`
---
-DROP TABLE IF EXISTS `contatoatual`;
-
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `contatoatual`  AS SELECT `contato`.`idContato` AS `COD. CONTATO`, `contato`.`nomeContato` AS `NOME`, `contato`.`emailContato` AS `email`, `contato`.`telefoneContato` AS `TELEFONE`, `contato`.`mensagemContato` AS `MENSAGEM`, `contato`.`dataContato` AS `DT. CONTATO` FROM `contato` ORDER BY `contato`.`dataContato` AS `DESCdesc` ASC  ;
 
 -- --------------------------------------------------------
 
@@ -608,7 +487,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `cursocompleto`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `cursocompleto`  AS SELECT `curso`.`idCurso` AS `COD. CURSO`, `curso`.`curso` AS `CURSO`, `curso`.`descCurso` AS `DESC. CURSO`, `curso`.`valorCurso` AS `VALOR`, `curso`.`imgCurso` AS `IMG. CURSO`, `curso`.`duracaoCurso` AS `DURAÇÃO`, `curso`.`instrutorCurso` AS `INSTRUTOR`, `curso`.`mensagemCurso` AS `MENSAGEM`, `curso`.`statusCurso` AS `STATUS` FROM `curso` ORDER BY `curso`.`curso` ASC  ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `cursocompleto`  AS SELECT `curso`.`idCurso` AS `COD. CURSO`, `curso`.`curso` AS `CURSO`, concat(substr(`curso`.`descCurso`,1,100),'...') AS `DESC. CURSO`, `curso`.`valorCurso` AS `VALOR`, `curso`.`imgCurso` AS `IMG. CURSO`, `curso`.`duracaoCurso` AS `DURAÇÃO`, `curso`.`instrutorCurso` AS `INSTRUTOR`, `curso`.`mensagemCurso` AS `MENSAGEM`, CASE WHEN `curso`.`statusCurso` = 1 THEN 'Ativo' ELSE 'Inativo' END AS `STATUS` FROM `curso` WHERE `curso`.`deletedCurso` <> 1 ORDER BY `curso`.`curso` ASC  ;
 
 -- --------------------------------------------------------
 
@@ -622,29 +501,11 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 -- --------------------------------------------------------
 
 --
--- Estrutura para vista `matriculaantiga`
---
-DROP TABLE IF EXISTS `matriculaantiga`;
-
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `matriculaantiga`  AS SELECT `usuario`.`nomeUsuario` AS `NOME USUARIO`, `curso`.`curso` AS `CURSO`, `turma`.`nomeTurma` AS `TURMA`, `matricula`.`dataMatricula` AS `DT. MATRICULA`, `matricula`.`statusMatricula` AS `STATUS` FROM (((`matricula` join `usuario` on(`matricula`.`idUsuario` = `usuario`.`idUsuario`)) join `curso` on(`matricula`.`idCurso` = `curso`.`idCurso`)) join `turma` on(`matricula`.`idTurma` = `turma`.`idTurma`)) ORDER BY `matricula`.`dataMatricula` ASC  ;
-
--- --------------------------------------------------------
-
---
 -- Estrutura para vista `matriculaativa`
 --
 DROP TABLE IF EXISTS `matriculaativa`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `matriculaativa`  AS SELECT `usuario`.`nomeUsuario` AS `NOME USUARIO`, `curso`.`curso` AS `CURSO`, `turma`.`nomeTurma` AS `TURMA`, `matricula`.`dataMatricula` AS `DT. MATRICULA`, `matricula`.`statusMatricula` AS `STATUS` FROM (((`matricula` join `usuario` on(`matricula`.`idUsuario` = `usuario`.`idUsuario`)) join `curso` on(`matricula`.`idCurso` = `curso`.`idCurso`)) join `turma` on(`matricula`.`idTurma` = `turma`.`idTurma`)) WHERE `matricula`.`statusMatricula` = 11  ;
-
--- --------------------------------------------------------
-
---
--- Estrutura para vista `matriculaatual`
---
-DROP TABLE IF EXISTS `matriculaatual`;
-
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `matriculaatual`  AS SELECT `usuario`.`nomeUsuario` AS `NOME USUARIO`, `curso`.`curso` AS `CURSO`, `turma`.`nomeTurma` AS `TURMA`, `matricula`.`dataMatricula` AS `DT. MATRICULA`, `matricula`.`statusMatricula` AS `STATUS` FROM (((`matricula` join `usuario` on(`matricula`.`idUsuario` = `usuario`.`idUsuario`)) join `curso` on(`matricula`.`idCurso` = `curso`.`idCurso`)) join `turma` on(`matricula`.`idTurma` = `turma`.`idTurma`)) ORDER BY `matricula`.`dataMatricula` AS `DESCdesc` ASC  ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `matriculaativa`  AS SELECT `usuario`.`nomeUsuario` AS `NOME USUARIO`, `curso`.`curso` AS `CURSO`, `turma`.`nomeTurma` AS `TURMA`, `matricula`.`dataMatricula` AS `DT. MATRICULA`, `matricula`.`statusMatricula` AS `STATUS` FROM (((`matricula` join `usuario` on(`matricula`.`idUsuario` = `usuario`.`idUsuario`)) join `curso` on(`matricula`.`idCurso` = `curso`.`idCurso`)) join `turma` on(`matricula`.`idTurma` = `turma`.`idTurma`)) WHERE `matricula`.`statusMatricula` = 1111  ;
 
 -- --------------------------------------------------------
 
@@ -671,7 +532,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `turmasativo`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `turmasativo`  AS SELECT `turma`.`idTurma` AS `COD. TURMA`, `turma`.`nomeTurma` AS `TURMA`, `turma`.`statusTurma` AS `STATUS`, `turma`.`dataCadTurma` AS `DT. CAD. TURMA` FROM `turma` WHERE `turma`.`statusTurma` = 1 ORDER BY `turma`.`nomeTurma` ASC  ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `turmasativo`  AS SELECT `turma`.`idTurma` AS `COD. TURMA`, `turma`.`nomeTurma` AS `TURMA`, CASE WHEN `turma`.`statusTurma` = 1 THEN 'Ativo' ELSE 'Inativo' END AS `STATUS`, CASE WHEN `turma`.`andamentoTurma` = 1 THEN 'Completa' WHEN `turma`.`andamentoTurma` = 2 THEN 'Finalizada' ELSE 'Incompleta' END AS `ANDAMENTO`, `turma`.`dataCadTurma` AS `DT. CAD. TURMA` FROM `turma` WHERE `turma`.`statusTurma` = 1 ORDER BY `turma`.`nomeTurma` ASC  ;
 
 -- --------------------------------------------------------
 
@@ -680,7 +541,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `turmascompleto`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `turmascompleto`  AS SELECT `turma`.`idTurma` AS `COD. TURMA`, `turma`.`nomeTurma` AS `TURMA`, `turma`.`statusTurma` AS `STATUS`, `turma`.`dataCadTurma` AS `DT. CAD. TURMA` FROM `turma` ORDER BY `turma`.`nomeTurma` ASC  ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `turmascompleto`  AS SELECT `turma`.`idTurma` AS `COD. TURMA`, `turma`.`nomeTurma` AS `TURMA`, CASE WHEN `turma`.`statusTurma` = 1 THEN 'Ativo' ELSE 'Inativo' END AS `STATUS`, CASE WHEN `turma`.`andamentoTurma` = 1 THEN 'Completa' WHEN `turma`.`andamentoTurma` = 2 THEN 'Finalizada' ELSE 'Incompleta' END AS `ANDAMENTO`, `turma`.`dataCadTurma` AS `DT. CAD. TURMA` FROM `turma` ORDER BY `turma`.`nomeTurma` ASC  ;
 
 -- --------------------------------------------------------
 
@@ -689,25 +550,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `turmasinativo`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `turmasinativo`  AS SELECT `turma`.`idTurma` AS `COD. TURMA`, `turma`.`nomeTurma` AS `TURMA`, `turma`.`statusTurma` AS `STATUS`, `turma`.`dataCadTurma` AS `DT. CAD. TURMA` FROM `turma` WHERE `turma`.`statusTurma` = 0 ORDER BY `turma`.`nomeTurma` ASC  ;
-
--- --------------------------------------------------------
-
---
--- Estrutura para vista `usuarioadm`
---
-DROP TABLE IF EXISTS `usuarioadm`;
-
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `usuarioadm`  AS SELECT `usuario`.`nomeUsuario` AS `NOME`, `usuario`.`emailUsuario` AS `EMAIL`, `usuario`.`telUsuario` AS `TELEFONE`, `usuario`.`senhaUsuario` AS `SENHA`, `usuario`.`dataNasc` AS `DT. NASC.`, `usuario`.`imgUsuario` AS `IMG. USUARIO`, `usuario`.`dataCad` AS `DT. CAD.`, `usuario`.`statusUsuario` AS `STATUS`, `usuario`.`catUsuario` AS `CAT. USUARIO` FROM `usuario` WHERE `usuario`.`catUsuario` = 2 ORDER BY `usuario`.`nomeUsuario` ASC  ;
-
--- --------------------------------------------------------
-
---
--- Estrutura para vista `usuarioaluno`
---
-DROP TABLE IF EXISTS `usuarioaluno`;
-
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `usuarioaluno`  AS SELECT `usuario`.`nomeUsuario` AS `NOME`, `usuario`.`emailUsuario` AS `EMAIL`, `usuario`.`telUsuario` AS `TELEFONE`, `usuario`.`senhaUsuario` AS `SENHA`, `usuario`.`dataNasc` AS `DT. NASC.`, `usuario`.`imgUsuario` AS `IMG. USUARIO`, `usuario`.`dataCad` AS `DT. CAD.`, `usuario`.`statusUsuario` AS `STATUS`, `usuario`.`catUsuario` AS `CAT. USUARIO` FROM `usuario` WHERE `usuario`.`catUsuario` = 1 ORDER BY `usuario`.`nomeUsuario` ASC  ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `turmasinativo`  AS SELECT `turma`.`idTurma` AS `COD. TURMA`, `turma`.`nomeTurma` AS `TURMA`, CASE WHEN `turma`.`statusTurma` = 1 THEN 'Ativo' ELSE 'Inativo' END AS `STATUS`, CASE WHEN `turma`.`andamentoTurma` = 1 THEN 'Completa' WHEN `turma`.`andamentoTurma` = 2 THEN 'Finalizada' ELSE 'Incompleta' END AS `ANDAMENTO`, `turma`.`dataCadTurma` AS `DT. CAD. TURMA` FROM `turma` WHERE `turma`.`statusTurma` = 0 ORDER BY `turma`.`nomeTurma` ASC  ;
 
 -- --------------------------------------------------------
 
@@ -716,7 +559,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `usuarioativo`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `usuarioativo`  AS SELECT `usuario`.`nomeUsuario` AS `nomeUsuario`, `usuario`.`emailUsuario` AS `emailUsuario`, `usuario`.`telUsuario` AS `telUsuario`, `usuario`.`senhaUsuario` AS `senhaUsuario`, `usuario`.`dataNasc` AS `dataNasc`, `usuario`.`imgUsuario` AS `imgUsuario`, `usuario`.`dataCad` AS `dataCad`, `usuario`.`statusUsuario` AS `statusUsuario`, `usuario`.`catUsuario` AS `catUsuario` FROM `usuario` WHERE `usuario`.`statusUsuario` = 1 ORDER BY `usuario`.`nomeUsuario` ASC  ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `usuarioativo`  AS SELECT `usuario`.`idUsuario` AS `COD. USUARIO`, `usuario`.`nomeUsuario` AS `NOME DO USUARIO`, `usuario`.`emailUsuario` AS `EMAIL DO USUARIO`, `usuario`.`telUsuario` AS `TELEFONE DO USUARIO`, `usuario`.`dataNasc` AS `DATA DE NASC.`, `usuario`.`imgUsuario` AS `IMAGEM USUARIO`, `usuario`.`dataCad` AS `DATA DE CADASTRO`, CASE WHEN `usuario`.`statusUsuario` = 1 THEN 'Ativo' ELSE 'Inativo' END AS `STATUS`, CASE WHEN `usuario`.`catUsuario` = 1 THEN 'Professor' WHEN `usuario`.`catUsuario` = 2 THEN 'ADM' ELSE 'Aluno' END AS `CATEGORIA` FROM `usuario` WHERE `usuario`.`statusUsuario` = 1 AND `usuario`.`deletedUser` <> 11  ;
 
 -- --------------------------------------------------------
 
@@ -725,7 +568,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `usuariocompleto`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `usuariocompleto`  AS SELECT `usuario`.`nomeUsuario` AS `nomeUsuario`, `usuario`.`emailUsuario` AS `emailUsuario`, `usuario`.`telUsuario` AS `telUsuario`, `usuario`.`senhaUsuario` AS `senhaUsuario`, `usuario`.`dataNasc` AS `dataNasc`, `usuario`.`imgUsuario` AS `imgUsuario`, `usuario`.`dataCad` AS `dataCad`, `usuario`.`statusUsuario` AS `statusUsuario`, `usuario`.`catUsuario` AS `catUsuario` FROM `usuario` ORDER BY `usuario`.`nomeUsuario` ASC  ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `usuariocompleto`  AS SELECT `usuario`.`idUsuario` AS `COD. USUARIO`, `usuario`.`nomeUsuario` AS `NOME DO USUARIO`, `usuario`.`emailUsuario` AS `EMAIL DO USUARIO`, `usuario`.`telUsuario` AS `TELEFONE DO USUARIO`, `usuario`.`dataNasc` AS `DATA DE NASC.`, `usuario`.`imgUsuario` AS `IMAGEM USUARIO`, `usuario`.`dataCad` AS `DATA DE CADASTRO`, CASE WHEN `usuario`.`statusUsuario` = 1 THEN 'Ativo' ELSE 'Inativo' END AS `STATUS`, CASE WHEN `usuario`.`catUsuario` = 1 THEN 'Professor' WHEN `usuario`.`catUsuario` = 2 THEN 'ADM' ELSE 'Aluno' END AS `CATEGORIA` FROM `usuario` WHERE `usuario`.`deletedUser` <> 1 ORDER BY `usuario`.`idUsuario` ASC  ;
 
 -- --------------------------------------------------------
 
@@ -734,7 +577,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `usuarioinativo`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `usuarioinativo`  AS SELECT `usuario`.`nomeUsuario` AS `nomeUsuario`, `usuario`.`emailUsuario` AS `emailUsuario`, `usuario`.`telUsuario` AS `telUsuario`, `usuario`.`senhaUsuario` AS `senhaUsuario`, `usuario`.`dataNasc` AS `dataNasc`, `usuario`.`imgUsuario` AS `imgUsuario`, `usuario`.`dataCad` AS `dataCad`, `usuario`.`statusUsuario` AS `statusUsuario`, `usuario`.`catUsuario` AS `catUsuario` FROM `usuario` WHERE `usuario`.`statusUsuario` = 0 ORDER BY `usuario`.`nomeUsuario` ASC  ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `usuarioinativo`  AS SELECT `usuario`.`idUsuario` AS `COD. USUARIO`, `usuario`.`nomeUsuario` AS `NOME DO USUARIO`, `usuario`.`emailUsuario` AS `EMAIL DO USUARIO`, `usuario`.`telUsuario` AS `TELEFONE DO USUARIO`, `usuario`.`dataNasc` AS `DATA DE NASC.`, `usuario`.`imgUsuario` AS `IMAGEM USUARIO`, `usuario`.`dataCad` AS `DATA DE CADASTRO`, CASE WHEN `usuario`.`statusUsuario` = 1 THEN 'Ativo' ELSE 'Inativo' END AS `STATUS`, CASE WHEN `usuario`.`catUsuario` = 1 THEN 'Professor' WHEN `usuario`.`catUsuario` = 2 THEN 'ADM' ELSE 'Aluno' END AS `CATEGORIA` FROM `usuario` WHERE `usuario`.`statusUsuario` = 0 AND `usuario`.`deletedUser` <> 11  ;
 
 --
 -- Índices para tabelas despejadas
@@ -778,6 +621,13 @@ ALTER TABLE `depoimento`
   ADD PRIMARY KEY (`idDepo`);
 
 --
+-- Índices para tabela `destaqueblog`
+--
+ALTER TABLE `destaqueblog`
+  ADD PRIMARY KEY (`idDestaque`),
+  ADD KEY `idArtigo` (`idArtigo`);
+
+--
 -- Índices para tabela `materias`
 --
 ALTER TABLE `materias`
@@ -790,8 +640,17 @@ ALTER TABLE `materias`
 ALTER TABLE `matricula`
   ADD PRIMARY KEY (`idMatricula`),
   ADD KEY `idUsuario` (`idUsuario`),
+  ADD KEY `idCurso` (`idCurso`);
+
+--
+-- Índices para tabela `matriculado`
+--
+ALTER TABLE `matriculado`
+  ADD PRIMARY KEY (`idMatriculado`),
   ADD KEY `idCurso` (`idCurso`),
-  ADD KEY `idTurma` (`idTurma`);
+  ADD KEY `idUsuario` (`idUsuario`),
+  ADD KEY `idTurma` (`idTurma`),
+  ADD KEY `idMatricula` (`idMatricula`);
 
 --
 -- Índices para tabela `turma`
@@ -831,7 +690,7 @@ ALTER TABLE `contato`
 -- AUTO_INCREMENT de tabela `curso`
 --
 ALTER TABLE `curso`
-  MODIFY `idCurso` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `idCurso` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de tabela `dabar`
@@ -846,6 +705,12 @@ ALTER TABLE `depoimento`
   MODIFY `idDepo` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT de tabela `destaqueblog`
+--
+ALTER TABLE `destaqueblog`
+  MODIFY `idDestaque` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT de tabela `materias`
 --
 ALTER TABLE `materias`
@@ -855,19 +720,25 @@ ALTER TABLE `materias`
 -- AUTO_INCREMENT de tabela `matricula`
 --
 ALTER TABLE `matricula`
-  MODIFY `idMatricula` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idMatricula` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+
+--
+-- AUTO_INCREMENT de tabela `matriculado`
+--
+ALTER TABLE `matriculado`
+  MODIFY `idMatriculado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de tabela `turma`
 --
 ALTER TABLE `turma`
-  MODIFY `idTurma` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `idTurma` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- Restrições para despejos de tabelas
@@ -880,6 +751,13 @@ ALTER TABLE `arquivos`
   ADD CONSTRAINT `arquivos_ibfk_1` FOREIGN KEY (`idTurma`) REFERENCES `turma` (`idTurma`);
 
 --
+-- Limitadores para a tabela `destaqueblog`
+--
+ALTER TABLE `destaqueblog`
+  ADD CONSTRAINT `destaqueblog_ibfk_1` FOREIGN KEY (`idArtigo`) REFERENCES `artigo` (`idArtigo`),
+  ADD CONSTRAINT `destaqueblog_ibfk_2` FOREIGN KEY (`idArtigo`) REFERENCES `artigo` (`idArtigo`);
+
+--
 -- Limitadores para a tabela `materias`
 --
 ALTER TABLE `materias`
@@ -890,8 +768,16 @@ ALTER TABLE `materias`
 --
 ALTER TABLE `matricula`
   ADD CONSTRAINT `matricula_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuario` (`idUsuario`),
-  ADD CONSTRAINT `matricula_ibfk_2` FOREIGN KEY (`idCurso`) REFERENCES `curso` (`idCurso`),
-  ADD CONSTRAINT `matricula_ibfk_3` FOREIGN KEY (`idTurma`) REFERENCES `turma` (`idTurma`);
+  ADD CONSTRAINT `matricula_ibfk_2` FOREIGN KEY (`idCurso`) REFERENCES `curso` (`idCurso`);
+
+--
+-- Limitadores para a tabela `matriculado`
+--
+ALTER TABLE `matriculado`
+  ADD CONSTRAINT `matriculado_ibfk_1` FOREIGN KEY (`idCurso`) REFERENCES `curso` (`idCurso`),
+  ADD CONSTRAINT `matriculado_ibfk_2` FOREIGN KEY (`idUsuario`) REFERENCES `usuario` (`idUsuario`),
+  ADD CONSTRAINT `matriculado_ibfk_3` FOREIGN KEY (`idTurma`) REFERENCES `turma` (`idTurma`),
+  ADD CONSTRAINT `matriculado_ibfk_4` FOREIGN KEY (`idMatricula`) REFERENCES `matricula` (`idMatricula`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
